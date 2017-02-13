@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style type="text/css">
+        * { margin:0; padding:0;}
+        
+        body { width:100%; height:100%;}
+        
+        ul { list-style:none;}
+        hearder { 
+            display:block;
+            width: 100%; 
+            height: 100px; 
+            border-bottom: 3px #555 solid; 
+            background-color: #eee;
+            transition: 1s;
+        }
+        
+        hearder h1 { float:left; padding:10px; border:1px #f00 solid;}
+        
+        nav ul {float: right; padding:0 20px; border:1px #f00 solid;}
+        nav li {float:left; margin: 0 15px;} 
+        
+        section {display:block; width: 100%; height: 100%; }
+        section .a { width:100%; }
+        section .a .a_img img {width:100%; vertical-align: middle;}
+        
+        .b {width:100%;}
+        .b_img {width:100%; margin: 0 auto; background-color: #f88;}
+        .b_img ul {max-width:60%; margin: 0 auto; background-color: #ff8;}
+        .b_img ul li { display: inline-block; width: 200px; height: 200px; border:1px #f00 solid; margin:20px 10px;
+            text-align:center; vertical-align:middle;transition: 1s;
+        }
+        
+        footer {width:100%; height:100px; display:block; background-color:#777;}
+        
+        @media (max-width: 759px) and (min-width: 260px){
+            hearder { 
+                display:block;
+                width: 100%; 
+                height: 100px; 
+                border-bottom: 3px #fff solid; 
+                background-color: #555;
+                transition: 1s;
+                
+            }
+            
+            h1 {color: #fff;}
+            
+            .b_img ul li { display: inline-block; width: 150px; height: 150px; border:1px #f00 solid; margin:20px 10px;
+            text-align:center; vertical-align:middle;transition: 1s;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <hearder>
+        <h1>신유진</h1>
+        <nav>
+            <ul>
+                <li>이름</li>
+                <li>나이</li>
+                <li>주소</li>
+                <li>혈액형</li>
+            </ul>
+        </nav>
+    </hearder>
+    <section>
+        <div class="a">
+            <div class="a_img">
+                <img src="http://www.non-b.co.kr/wp-content/uploads/2016/04/main_bg.jpg"></img>
+            </div>
+        </div>
+        <div class="b">
+            <div class="b_img">
+                <ul>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                    <li>d</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>dddd</div>
+    </footer>
+</body>
+</html>

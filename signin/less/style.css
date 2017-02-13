@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  color: #333;
+}
+body {
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav.global_gnb {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav.global_gnb .global_gnb_top {
+  border-bottom: 1px solid #e1e1e1;
+  padding-right: 24px;
+}
+nav.global_gnb .global_gnb_top .global_left_nav {
+  float: left;
+}
+nav.global_gnb .global_gnb_top .global_left_nav a {
+  display: inline-block;
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  color: #8D8D8D;
+  min-width: 50px;
+}
+nav.global_gnb .global_gnb_top .global_left_nav a span {
+  padding: 0 8px;
+  vertical-align: middle;
+}
+nav.global_gnb .global_gnb_top .global_left_nav a img {
+  vertical-align: middle;
+}
+nav.global_gnb .global_gnb_top .global_right_nav {
+  float: right;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li {
+  position: relative;
+  float: left;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li span {
+  vertical-align: middle;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li a {
+  color: #8D8D8D;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li a.cart {
+  display: block;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li a.cart span {
+  width: 18px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 0;
+  background-image: url(http://image.nike.co.kr/global/global_ico_cart_new.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+nav.global_gnb .global_gnb_top:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.global_gnb_middle {
+  position: relative;
+  padding: 0 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.global_gnb_middle .global_gnb_main {
+  display: block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_logo {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_logo a {
+  display: block;
+  width: 50px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_logo a span {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0;
+  background-image: url(http://image.nike.co.kr/global/global_gnb_logo_new.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: bottom;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .boys1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .boys1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .girls1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .girls1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .searchArea {
+  position: absolute;
+  top: 50%;
+  margin-top: -21px;
+  right: 32px;
+}
+.global_gnb_middle .global_gnb_main .searchArea .research {
+  padding: 0 30px 0 45px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  height: 39px;
+  width: 145px;
+  font-size: 16px;
+}
+.global_gnb_middle .global_gnb_main .searchArea a {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 46px;
+  height: 38px;
+  background-image: url(http://image.nike.co.kr/global/global_ico_search_new.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.global_gnb_bottom {
+  width: 100%;
+  height: 55px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e1e1e1;
+}
+.global_gnb_bottom .global_bottom {
+  border: 1px #f00 solid;
+  width: 770px;
+  height: 55px;
+  margin: 0 auto;
+}
+.global_gnb_bottom .global_bottom li {
+  margin: 0 10px;
+  line-height: 55px;
+  float: left;
+}
+.warp {
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  width: 100%;
+  border: 1px #f00 solid;
+}
+.warp .sec001 {
+  width: 100%;
+}
+.warp .sec001 img {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec001 .vodArea {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.warp .sec001 .vodArea video {
+  width: 100%;
+}
+.warp .sec002 {
+  width: 100%;
+}
+.warp .sec002 img {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec003 {
+  width: 100%;
+}
+.warp .sec003 img {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec004 {
+  width: 100%;
+}
+.warp .sec004 img {
+  width: 100%;
+  vertical-align: middle;
+}
+.footer_1 {
+  border: 5px #f00 solid;
+  width: 100%;
+}
+.footer_1 .global_footer1 {
+  background-color: #111;
+  padding: 0 80px;
+  position: relative;
+}
+.footer_1 .global_footer1 .global_footer_list {
+  width: 100%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner {
+  width: 80%;
+  padding: 60px 0 60px 50px;
+  float: right;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner ul {
+  float: left;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fa {
+  width: 25%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fa a {
+  font-size: 16px;
+  line-height: 32px;
+  color: #8d8d8d;
+  font-weight: bold;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb {
+  width: 16%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb li:first-child a h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb li:first-child a h4 span {
+  font-size: 14px;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb li a {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8d8d8d;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fc {
+  width: 16%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fc a h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd {
+  width: 16%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .twitter {
+  background-image: url("http://image.nike.co.kr/global/global_ico_twitter_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .facebook {
+  background-image: url("http://image.nike.co.kr/global/global_ico_facebook_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .youtube {
+  background-image: url("http://image.nike.co.kr/global/global_ico_youtube_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .insta {
+  background-image: url("http://image.nike.co.kr/global/global_ico_insta_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.footer_2 .global_footer2 {
+  width: 100%;
+}
+.footer_2 .global_footer2 .global_footer_info1 {
+  padding: 20px 30px;
+  border-top: 1px solid #2c2c2c;
+  background-color: #1d1d1d;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left {
+  float: left;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li {
+  display: inline-block;
+  color: #999;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li a {
+  color: #999;
+  font-size: 10px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li a img {
+  position: relative;
+  top: 5px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li a span {
+  margin-left: 5px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_right {
+  float: right;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_right li {
+  display: inline-block;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_right li a {
+  color: #999;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.footer_2 .global_footer2 .global_footer_info1:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.footer_2 .global_footer2 .global_footer_info2 {
+  padding: 40px 0 60px 0;
+  background-color: #1d1d1d;
+  border-top: 1px solid #2c2c2c;
+}
+.footer_2 .global_footer2 .global_footer_info2 ul {
+  float: left;
+  margin-left: 13%;
+}
+.footer_2 .global_footer2 .global_footer_info2 ul li {
+  color: #8d8d8d;
+  font-size: 11px;
+  line-height: 17px;
+}
+.footer_2 .global_footer2 .global_footer_info2:after {
+  display: block;
+  content: '';
+  clear: both;
+}

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nike</title>
+    <link rel="stylesheet" href="css/import.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    
+    <nav class="global_gnb">
+        <div class="global_gnb_top">
+            
+            <div class="global_left_nav">
+                <a href="http://www.nike.co.kr?tracking=pc_brandbar_01"><span>Nike</span></a>
+                <a href="#"><span>Nike+</span></a>
+                <a href="#" class="global_ico_jordan"><span>조던</span></a>
+                <a href="#"><span>컨버스</span></a>
+            </div>
+            
+            <div class="global_right_nav">
+                <ul>
+                    <li><a href="#"><span>회원가입 / 로그인</span></a></li>
+                    <li><a href="#"><span>고객센터</span></a></li>
+                    <li><a href="#" class="cart"><span>장바구니</span></a></li>
+                    <li><a href="#"><span><img src="http://image.nike.co.kr/global/ko_flag.png"></img></span></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="global_gnb_middle">
+            
+            <div class="global_gnb_main">
+                
+                <h1 class="global_gnb_logo">
+                    <a href="#"><span>Nike. Shoes, Clothing & Gear.</span></a>
+                </h1>
+                
+                <div class="global_gnb_menu">
+                    
+                    <div class="men1">
+                        <a href="#"><span>MEN</span></a>
+                    </div>
+                    
+                    <div class="women1">
+                        <a href="#"><span>WOMEN</span></a>
+                    </div>
+                    
+                    <div class="boys1">
+                        <a href="#"><span>BOYS</span></a>
+                    </div>
+                    
+                    <div class="girls1">
+                        <a href="#"><span>GIRLS</span></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </nav>
+    
+    <div class="overlayer"></div> 
+        
+    
+    <div class="popLayer">
+        <div class="layerBox">
+            <div class="contents">
+                <h4>회원가입 정보입력</h4>
+                <ul class="step">
+                    <li>본인인증</li>
+                    <li>약관동의</li>
+                    <li class="on">정보입력</li>
+                    <li>가입요청</li>
+                    <li class="last">가입완료</li>
+                </ul>
+                
+                <fieldset class="signin">
+                    
+                    <legend>회원가입 정보입력 폼</legend>
+                    <div class="infoInput">
+                        <p class="txt2">는 필수 입력 항목입니다.</p>
+                        
+                        <table>
+                            
+                            <caption>회원가입 정보입력</caption>
+                            
+                            <tbody>
+                                <!--------------------이름-------------------------->
+                                <tr>
+                                    <th>
+                                        <p><span class="star">이름</span></p>
+                                    </th>
+                                    <td>신유진</td>
+                                </tr>
+                                
+                                <!--------------------이메일-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <p><span class="star">E-mail 주소</span></p>
+                                    </th>
+                                    <td>
+                                        <span>hra2417@naver.com</span>
+                                        <p class="mt10">
+                                            <input type="checkbox" name="chkEmail"/>
+                                            <label for="chkEmail">나이키의 서비스 및 이벤트 소식이 담긴 이메일을 수신하겠습니다.</label>
+                                        </p>
+                                        <p class="pointTxt">
+                                            패스워드 분실 시 본 이메일 주소로 임시 패스워드를 발급받을 수 있습니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------아이디-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="loginId"><p><span class="star">아이디</span></p></label>
+                                    </th>
+                                    <td>
+                                        <div class="box">
+                                            <input type="text" name="loginId" class="boxA"/>
+                                            <a href="#"><span>중복할인</span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------비밀번호-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="loginId"><p><span class="star">패스워드</span></p></label>
+                                    </th>
+                                    <td>
+                                        <div class="box">
+                                            <input type="text" name="loginId" class="boxB"/>
+                                            <span class="txt3">보안등급</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------비밀번호 확인-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="loginPassword"><p><span class="star">패스워드</span></p></label>
+                                    </th>
+                                    <td>
+                                        <div class="box">
+                                            <input type="text" name="loginId" class="boxB"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------생년월일-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="loginBirthday"><p><span class="star">생년월일</span></p></label>
+                                    </th>
+                                    <td>
+                                        <select name="birthday" id="birthday">
+                                            <option value>년도</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                        </select>
+                                        <span class="bir">년</span>
+                                        
+                                        <select name="birthday" id="birthday">
+                                            <option value>월</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                        <span class="bir">월</span>
+                                        
+                                        <select name="birthday" id="birthday">
+                                            <option value>일</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                        <span class="bir">일</span>
+                                        
+                                        
+                                        <input type="radio" name="month"/>
+                                        <label for="radioType">양력</label>
+                                        <input type="radio" name="month"/>
+                                        <label for="radioType">음력</label>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------성별-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="loginGender"><p><span class="star">성별</span></p></label>
+                                    </th>
+                                    <td>
+                                        <input type="radio" name="gender"/>
+                                        <label for="radioType">여성</label>
+                                        <input type="radio" name="gender"/>
+                                        <label for="radioType">남성</label>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------연락처-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="logincaphone"><span class="star">연락처</span></label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="cablephoneNum1" class="box2"/>
+                                        <span>-</span>
+                                        <input type="text" name="cablephoneNum2" class="box2"/>
+                                        <span>-</span>
+                                        <input type="text" name="cablephoneNum3" class="box2"/>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------휴대폰-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        <label for="loginPhone"><p><span class="star">휴대폰</span></p></label>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="phoneNum1" class="box2"/>
+                                        <span>-</span>
+                                        <input type="text" name="phoneNum2" class="box2"/>
+                                        <span>-</span>
+                                        <input type="text" name="phoneNum3" class="box2"/>
+                                        
+                                        <p class="mt10">
+                                            <input type="checkbox" name="chkPhone"/>
+                                            <label for="chkPhone">SMS 정보를 수신하겠습니다.</label>
+                                        </p>
+                                        <p class="pointTxt">
+                                            패스워드 분실 시 확인 받을 수 있는 휴대폰 번호를 입력해 주세요.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!--------------------개인정보 보관 기간설정-------------------------->
+                                
+                                <tr>
+                                    <th>
+                                        
+                                        <label for="loginInfo">
+                                            <p>
+                                            개인정보 보관
+                                            <br/>
+                                            <span class="star">기간설정</span>
+                                            </p>
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <input type="radio" name="personInfo"/>
+                                        <label for="radioType">1년</label>
+                                        
+                                        <input type="radio" name="personInfo"/>
+                                        <label for="radioType">3년</label>
+                                        
+                                        <input type="radio" name="personInfo"/>
+                                        <label for="radioType">영구</label>
+                                        
+                                        <p class="mt10">
+                                            - 정보통신망 이용촉진 및 정보 보호 등에 관한 법률 제29조 제2항에 따라 설정된 개인정보 보관 기간 동안
+                                            NIKE.COM의 사용이력이 없는 경우 휴면 계정이 되며, 휴면계정의 개인정보는 안전하게 분리 보관 처리됩니다.
+                                        </p>
+                                        
+                                        <p class="mt10">
+                                            - 개인정보 보관 기간 설정은 회원정보관리에서 수정 가능합니다.
+                                        </p>
+                                        
+                                        <p class="mt10">
+                                            - NIKE.COM 사용 이력이 없어 휴면계정이 된 경우 계정 활성화 요청에 의해 활성화 가능합니다.
+                                        </p>
+                                        
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                            
+                        </table>
+                        
+                    </div>
+                    
+                    <div class="alR mt20">
+                        <a href="#" class="orange">
+                            <label for="usersubmit"></label>
+                            <input type="submit" id="usersubmit" value="가입하기" />
+                            <!--<span class="right">가입하기</span>-->
+                        </a>
+                        <a href="#" class="gray">
+                            <span class="right">취소</span>
+                        </a>
+                    </div>
+                    
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

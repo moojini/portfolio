@@ -1,0 +1,136 @@
+section.workPage {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border:1px #f00 solid;
+        
+        span {
+            display: block;
+            height: 100px;
+            border: 1px #f00 solid;
+            font-size:0px;
+            background-color: #E04F71;
+            background-image: url(@mainwork);
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 2px 10px #666;
+        }
+        
+        .work-list {
+            display: block;
+            width: 1070px;
+            border: 1px #000 solid;
+            margin: 100px auto;
+        }
+        
+        div {
+            display: inline-block;
+        }
+        
+        // 반응형박스 
+        
+        .responsible .btn {
+            display: block;
+            border:1px #CCC solid; 
+            height:200px; 
+            width:200px;
+            border-radius:50%;
+            line-height:200px; 
+            text-align: center;
+            color:#FFF;
+            margin:0 30px;
+            // padding:0 30px; 
+            font-size:25px; 
+            background-color:#B6D884;
+        }
+        
+        .responsible .box{
+            position:absolute; 
+            width:1100px; 
+            height:600px;
+            border-radius:10px;
+            background-color:#FFDCC0;
+            left:45%; 
+            margin-left:-455px;
+            top:200px;
+            
+            a {text-decoration: none;}
+        }
+        
+        .responsible .box .close{
+            width:60px;
+            height:60px;
+            position:absolute;
+            right:-80px;
+            line-height:60px;
+            top:20px;
+            background:#333;
+            color:#FFF;
+            text-align: center;
+            border-radius:50% ;
+        }
+        
+        .box:target{
+             animation:openMotion 1s both;
+        }
+         #aaa:target + .box{
+             animation:closeMotion 1s both;
+        }
+        
+        @keyframes openMotion {
+            from { top:-100%; margin:0; left:45%;margin-left:-455px; }
+            to {top:200px;}
+        }
+        @keyframes closeMotion  {
+            from {top:200px;}
+            to {top:-100%; margin:0; left:45%;margin-left:-455px;}
+        }
+        
+        // 리뉴얼 박스
+        
+        .renewal .btn {
+            display: block;
+            border:1px #CCC solid; 
+            height:200px; 
+            width:200px;
+            border-radius:50%;
+            line-height:200px; 
+            text-align: center;
+            color:#FFF;
+            margin:0 30px;
+            // padding:0 30px; 
+            font-size:25px; 
+            background-color:#81CCB7;
+        }
+        
+        .hardcode .btn {
+            display: block;
+            border:1px #CCC solid; 
+            height:200px; 
+            width:200px;
+            border-radius:50%;
+            line-height:200px; 
+            text-align: center;
+            color:#FFF;
+            margin:0 30px;
+            // padding:0 30px; 
+            font-size:25px; 
+            background-color:#6EC9E4;
+        }
+        
+        .design .btn {
+            display: block;
+            border:1px #CCC solid; 
+            height:200px; 
+            width:200px;
+            border-radius:50%;
+            line-height:200px; 
+            text-align: center;
+            color:#FFF;
+            margin:0 30px;
+            // padding:0 30px; 
+            font-size:25px; 
+            background-color:#FFE085;
+        }
+        
+    }

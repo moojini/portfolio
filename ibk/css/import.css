@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+a {
+  color: #575757;
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+#hearder {
+  width: 100%;
+}
+.gnb {
+  width: 940px;
+  height: 76px;
+  border: 1px #f00 solid;
+  margin: 0 auto;
+  background-color: #fff;
+  background-image: url("https://www.ibk.co.kr/img/navigation/bg_gnb.gif");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.gnb h1 {
+  float: left;
+  margin-top: 20px;
+  height: 35px;
+  width: 200px;
+  border: 1px #f00 solid;
+  font-size: 0;
+  text-indent: -9999px;
+  background-image: url("https://www.ibk.co.kr/img/navigation/h1_logo_sub.gif");
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.gnb .gnb_util {
+  width: 620px;
+  float: right;
+  margin-top: 7px;
+  border: 1px #f00 solid;
+}
+.gnb .gnb_util ul {
+  float: left;
+  display: inline-block;
+}
+.gnb .gnb_util ul li {
+  float: left;
+  margin-right: 10px;
+  padding-top: 8px;
+}
+.gnb .gnb_util .language {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  padding-top: 8px;
+}
+.gnb .gnb_util .gnb_search {
+  display: inline-block;
+  float: right;
+  width: 133px;
+  height: 21px;
+  margin-top: 7px;
+  padding: 1px;
+  background-image: url("https://www.ibk.co.kr/img/navigation/bg_util_search.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.gnb .gnb_util .gnb_search input {
+  width: 101px;
+  height: 21px;
+  padding: 0 5px;
+  border: 0;
+  vertical-align: top;
+}
+.gnb .gnb_util .gnb_search a {
+  display: block;
+  width: 16px;
+  height: 15px;
+  vertical-align: top;
+  float: right;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+.gnb .gnb_menu {
+  width: 690px;
+  float: right;
+  margin-top: 4px;
+  display: inline-block;
+  position: relative;
+}
+.gnb .gnb_menu ul {
+  float: left;
+}
+.gnb .gnb_menu ul li {
+  text-align: center;
+  float: left;
+  margin: 0 1px;
+}
+.gnb .gnb_menu .drop_down {
+  width: 103px;
+  padding-top: 5px;
+  float: left;
+}
+.gnb .gnb_menu .drop_down ul {
+  display: none;
+  width: 103px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10px;
+  float: none;
+  margin-top: 13px;
+}
+.gnb .gnb_menu .drop_down ul li {
+  text-align: left;
+  line-height: 19px;
+  width: 100%;
+  font-size: 12px;
+}
+.gnb .gnb_menu .drop_down ul li a {
+  display: block;
+  width: 80px;
+  padding: 4px 0 4px 15px;
+}
+.gnb .gnb_menu .all_menu {
+  float: right;
+}

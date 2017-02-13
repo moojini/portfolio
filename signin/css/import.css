@@ -1,0 +1,1157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  color: #333;
+}
+body {
+  position: relative;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav.global_gnb {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 1s;
+}
+nav.global_gnb .global_gnb_top {
+  border-bottom: 1px solid #e1e1e1;
+  padding-right: 24px;
+  transition: 1s;
+}
+nav.global_gnb .global_gnb_top .global_left_nav {
+  float: left;
+}
+nav.global_gnb .global_gnb_top .global_left_nav a {
+  display: inline-block;
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  color: #8D8D8D;
+  min-width: 50px;
+}
+nav.global_gnb .global_gnb_top .global_left_nav a span {
+  padding: 0 8px;
+  vertical-align: middle;
+}
+nav.global_gnb .global_gnb_top .global_left_nav a img {
+  vertical-align: middle;
+}
+nav.global_gnb .global_gnb_top .global_right_nav {
+  float: right;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li {
+  position: relative;
+  float: left;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li span {
+  vertical-align: middle;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li a {
+  color: #8D8D8D;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 10px;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li a.cart {
+  display: block;
+}
+nav.global_gnb .global_gnb_top .global_right_nav li a.cart span {
+  width: 18px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 0;
+  background-image: url(http://image.nike.co.kr/global/global_ico_cart_new.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+nav.global_gnb .global_gnb_top:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+.global_gnb_middle {
+  position: relative;
+  padding: 0 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.global_gnb_middle .global_gnb_main {
+  display: block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_logo {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_logo a {
+  display: block;
+  width: 50px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_logo a span {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0;
+  background-image: url(http://image.nike.co.kr/global/global_gnb_logo_new.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: bottom;
+}
+.global_gnb_middle .global_gnb_main .menu_list {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: 1s;
+}
+.global_gnb_middle .global_gnb_main .menu_list .menu_ikon {
+  position: absolute;
+  right: 0;
+}
+.global_gnb_middle .global_gnb_main .menu_list .menu_ikon a {
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  display: block;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+}
+.global_gnb_middle .global_gnb_main .menu_list .menu_ikon a.menu_ikon_open {
+  background-image: url(../img/ikonMenu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.global_gnb_middle .global_gnb_main .menu_list .menu_ikon a.menu_ikon_close {
+  background-image: url(../img/ikonclose.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: none;
+}
+.global_gnb_middle .global_gnb_main .menu_list ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: #fff;
+}
+.global_gnb_middle .global_gnb_main .menu_list ul li {
+  padding: 20px 30px;
+  border-top: 1px #e5e5e5 solid;
+}
+.global_gnb_middle .global_gnb_main .menu_list ul li a {
+  display: block;
+  padding-left: 25px;
+  color: #333;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px #e5e5e5 solid;
+  display: none;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list {
+  padding: 30px;
+  display: inline-block;
+  width: 980px;
+  margin: 0 auto;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_1 {
+  float: left;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_1 ul {
+  margin: 0 30px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_1 ul li {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: left;
+  color: #444;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_2 {
+  float: left;
+  border: 1px #f00 solid;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_2 ul {
+  margin: 0 30px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_2 ul li:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: left;
+  color: #444;
+  margin-bottom: 20px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .men2 .men_list .men_list_2 ul li {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: left;
+  color: #444;
+  padding: 0 40px 0 0;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px #e5e5e5 solid;
+  display: none;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list {
+  padding: 30px;
+  display: inline-block;
+  width: 980px;
+  margin: 0 auto;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_1 {
+  float: left;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_1 ul {
+  margin: 0 30px 50px 0;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_1 ul li {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: left;
+  color: #444;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_2 {
+  float: left;
+  border: 1px #f00 solid;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_2 ul {
+  margin: 0 30px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_2 ul li:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: left;
+  color: #444;
+  margin-bottom: 20px;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .women2 .women_list .women_list_2 ul li {
+  font-size: 13px;
+  line-height: 25px;
+  text-align: left;
+  color: #444;
+  padding: 0 40px 0 0;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .boys1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .boys1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .girls1 {
+  display: inline-block;
+}
+.global_gnb_middle .global_gnb_main .global_gnb_menu .girls1 a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.global_gnb_middle .global_gnb_main .searchArea {
+  position: absolute;
+  top: 50%;
+  margin-top: -21px;
+  right: 32px;
+}
+.global_gnb_middle .global_gnb_main .searchArea .research {
+  padding: 0 30px 0 45px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  height: 39px;
+  width: 145px;
+  font-size: 16px;
+}
+.global_gnb_middle .global_gnb_main .searchArea a {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 46px;
+  height: 38px;
+  background-image: url(http://image.nike.co.kr/global/global_ico_search_new.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.global_gnb_bottom {
+  width: 100%;
+  height: 55px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e1e1e1;
+}
+.global_gnb_bottom .global_bottom {
+  border: 1px #f00 solid;
+  width: 680px;
+  height: 55px;
+  margin: 0 auto;
+}
+.global_gnb_bottom .global_bottom ul {
+  margin: 0 auto;
+}
+.global_gnb_bottom .global_bottom ul li:first-child {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: -1px;
+}
+.global_gnb_bottom .global_bottom ul li {
+  line-height: 55px;
+  color: #a8a8a8;
+  float: left;
+  padding: 0 30px;
+}
+.global_gnb_bottom .global_bottom ul li a {
+  text-decoration: underline;
+  color: #a8a8a8;
+  letter-spacing: -1px;
+}
+.warp {
+  padding: 0;
+  margin: 0;
+  margin-top: 155px;
+  width: 100%;
+}
+.warp .sec001 {
+  width: 100%;
+  position: relative;
+}
+.warp .sec001 .sec001_bg {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec001 .vodArea {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.warp .sec001 .vodArea video {
+  width: 100%;
+}
+.warp .sec001 .warper_txt {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+}
+.warp .sec001 .warper_txt p {
+  margin-bottom: 15px;
+}
+.warp .sec001 .warper_txt ul li {
+  float: left;
+}
+.warp .sec001 .warper_txt ul li a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+}
+.warp .sec002 {
+  width: 100%;
+  position: relative;
+}
+.warp .sec002 .sec002_bg {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec002 .warper_txt {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+}
+.warp .sec002 .warper_txt p {
+  margin-bottom: 15px;
+}
+.warp .sec002 .warper_txt ul li {
+  float: left;
+}
+.warp .sec002 .warper_txt ul li a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+}
+.warp .sec003 {
+  width: 100%;
+  position: relative;
+}
+.warp .sec003 .sec003_bg {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec003 .warper_txt {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+}
+.warp .sec003 .warper_txt p {
+  margin-bottom: 15px;
+}
+.warp .sec003 .warper_txt ul li {
+  float: left;
+}
+.warp .sec003 .warper_txt ul li a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+}
+.warp .sec004 {
+  width: 100%;
+  position: relative;
+}
+.warp .sec004 .sec004_bg {
+  width: 100%;
+  vertical-align: middle;
+}
+.warp .sec004 .warper_txt {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+}
+.warp .sec004 .warper_txt p {
+  margin-bottom: 15px;
+}
+.warp .sec004 .warper_txt ul li {
+  float: left;
+}
+.warp .sec004 .warper_txt ul li a {
+  display: inline-block;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 15px;
+  margin-right: 10px;
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
+.footer_1 {
+  border: 5px #f00 solid;
+  width: 100%;
+}
+.footer_1 .global_footer1 {
+  background-color: #111;
+  padding: 0 80px;
+  position: relative;
+}
+.footer_1 .global_footer1 .global_footer_list {
+  width: 100%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner {
+  width: 80%;
+  padding: 60px 0 60px 50px;
+  float: right;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner ul {
+  float: left;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fa {
+  width: 25%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fa a {
+  font-size: 16px;
+  line-height: 32px;
+  color: #8d8d8d;
+  font-weight: bold;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb {
+  width: 16%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb li:first-child a h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb li:first-child a h4 span {
+  font-size: 14px;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fb li a {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8d8d8d;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fc {
+  width: 16%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fc a h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd {
+  width: 16%;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .twitter {
+  background-image: url("http://image.nike.co.kr/global/global_ico_twitter_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .facebook {
+  background-image: url("http://image.nike.co.kr/global/global_ico_facebook_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .youtube {
+  background-image: url("http://image.nike.co.kr/global/global_ico_youtube_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list .global_footer_list_inner .fd .sns .insta {
+  background-image: url("http://image.nike.co.kr/global/global_ico_insta_30-30.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.footer_1 .global_footer1 .global_footer_list:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.footer_2 .global_footer2 {
+  width: 100%;
+}
+.footer_2 .global_footer2 .global_footer_info1 {
+  padding: 20px 30px;
+  border-top: 1px solid #2c2c2c;
+  background-color: #1d1d1d;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left {
+  float: left;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li {
+  display: inline-block;
+  color: #999;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li a {
+  color: #999;
+  font-size: 10px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li a img {
+  position: relative;
+  top: 5px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_left li a span {
+  margin-left: 5px;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_right {
+  float: right;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_right li {
+  display: inline-block;
+}
+.footer_2 .global_footer2 .global_footer_info1 .fot_right li a {
+  color: #999;
+  font-size: 10px;
+  margin-right: 10px;
+}
+.footer_2 .global_footer2 .global_footer_info1:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.footer_2 .global_footer2 .global_footer_info2 {
+  padding: 40px 0 60px 0;
+  background-color: #1d1d1d;
+  border-top: 1px solid #2c2c2c;
+}
+.footer_2 .global_footer2 .global_footer_info2 ul {
+  float: left;
+  margin-left: 13%;
+}
+.footer_2 .global_footer2 .global_footer_info2 ul li {
+  color: #8d8d8d;
+  font-size: 11px;
+  line-height: 17px;
+}
+.footer_2 .global_footer2 .global_footer_info2:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.infoInput {
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 6px;
+  padding-bottom: 20px;
+}
+.infoInput .txt2 {
+  margin-top: 16px;
+  margin-bottom: 22px;
+  padding-left: 7px;
+  color: #fa5400;
+  font-size: 11px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/ico/bl_star.png);
+  background-repeat: no-repeat;
+  background-position: left 5px;
+  padding-top: 5px;
+}
+.infoInput table caption {
+  display: none;
+}
+.infoInput table th {
+  height: 26px;
+  width: 130px;
+  padding: 8px 0 7px;
+  text-align: left;
+}
+.infoInput table th p {
+  padding-left: 10px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/ico/bl_dot.png);
+  background-repeat: no-repeat;
+  background-position: left 5px;
+}
+.infoInput table th p span.star {
+  display: inline-block;
+  padding-right: 7px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/ico/bl_star.png);
+  background-position: right -1px;
+  background-repeat: no-repeat;
+}
+.infoInput table td {
+  height: 26px;
+  width: 650px;
+  padding: 8px 0 7px;
+  text-align: left;
+}
+.infoInput table td p.mt10 {
+  padding-top: 10px;
+}
+.infoInput table td p.mt10 label {
+  cursor: pointer;
+  margin-left: 4px;
+  color: #666;
+  font-size: 11px;
+}
+.infoInput table td .pointTxt {
+  padding-left: 17px;
+  color: #666;
+  font-size: 11px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/ico/ico_point.png);
+  background-repeat: no-repeat;
+  background-position: left 2px;
+  margin-top: 5px;
+}
+.infoInput table td .box {
+  position: relative;
+}
+.infoInput table td .box input.boxA {
+  width: 120px;
+  height: 24px;
+}
+.infoInput table td .box a {
+  display: inline-block;
+  min-width: 40px;
+  height: 26px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/btn/btn-black26-left.png);
+  background-repeat: no-repeat;
+  padding-left: 5px;
+  margin-left: 3px;
+}
+.infoInput table td .box a span {
+  display: inline-block;
+  min-width: 40px;
+  height: 26px;
+  line-height: 23px;
+  color: #fff;
+  font-size: 11px;
+  padding: 0 10px 0 5px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/btn/btn-black26-right.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+.infoInput table td .box .boxB {
+  width: 195px;
+  height: 24px;
+}
+.infoInput table td .box .txt3 {
+  font-weight: bold;
+  margin: 8px 0 0 5px;
+  font-size: 11px;
+  font-family: '돋움';
+}
+.infoInput table td .box2 {
+  width: 50px;
+  height: 24px;
+  margin: 0 1px 0 3px;
+}
+.overlayer {
+  height: 2000px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+.popLayer {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  width: 860px;
+  margin-left: -430px;
+  padding-top: 10px;
+}
+.popLayer .layerBox {
+  position: relative;
+  padding-bottom: 10px;
+}
+.popLayer .layerBox .contents {
+  width: 780px;
+  padding: 27px 40px 30px;
+  background-color: #fff;
+}
+.popLayer .layerBox .contents h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  line-height: 20px;
+}
+.popLayer .layerBox .contents .step {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+}
+.popLayer .layerBox .contents .step li {
+  float: left;
+  width: 120px;
+  height: 21px;
+  padding-top: 7px;
+  margin-left: -3px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/bg/bg_member_step.png);
+  background-repeat: no-repeat;
+}
+.popLayer .layerBox .contents .step .on {
+  color: #fff;
+  background-position: 0 -28px;
+}
+.popLayer .layerBox .contents .step .last {
+  background-position: 0 -56px;
+}
+.popLayer .layerBox .contents fieldset {
+  border: 0px;
+}
+.popLayer .layerBox .contents fieldset legend {
+  display: none;
+}
+.popLayer .layerBox .contents dl.termsForm dt {
+  margin-top: 16px;
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+}
+.popLayer .layerBox .contents dl.termsForm dd {
+  margin-top: 9px;
+}
+.popLayer .layerBox .contents dl.termsForm dd p {
+  overflow-y: auto;
+  width: 760px;
+  height: 88px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #666;
+  background-color: #fafafa;
+  font-family: "돋움";
+  line-height: 18px;
+}
+.popLayer .layerBox .contents dl.termsForm dd div {
+  display: block;
+}
+.popLayer .layerBox .contents dl.termsForm dd .alR {
+  float: right;
+  margin: 10px 0;
+  text-align: right;
+}
+.popLayer .layerBox .contents dl.termsForm dd .mt10 {
+  display: block;
+  margin: 10px 0;
+}
+.popLayer .layerBox .contents dl.termsForm .agree_comment {
+  margin-top: 10px;
+  position: relative;
+}
+.popLayer .layerBox .contents dl.termsForm .agree_comment p {
+  line-height: 18px;
+  margin-top: 10px;
+}
+.popLayer .layerBox .contents dl.termsForm .agree_comment p span {
+  font-weight: bold;
+}
+.popLayer .layerBox .contents dl.termsForm .agree_comment .alR {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.popLayer .layerBox .contents .allCheck {
+  width: 740px;
+  margin-top: 19px;
+  padding: 20px;
+  text-align: right;
+  background-color: #eee;
+}
+.popLayer .layerBox .contents .allCheck .checkType02 {
+  margin-left: 4px;
+  font-weight: bold;
+}
+.popLayer .layerBox .contents .mt20 {
+  margin-top: 20px;
+  text-align: right;
+}
+.popLayer .layerBox .contents .mt20 .txt {
+  margin-right: 17px;
+}
+.popLayer .layerBox .contents .mt20 a.orange {
+  display: inline-block;
+  padding-left: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/btn/btn-orange-left.png);
+  background-repeat: no-repeat;
+}
+.popLayer .layerBox .contents .mt20 a.orange input {
+  display: inline-block;
+  min-width: 70px;
+  height: 39px;
+  padding: 0 15px 0 5px;
+  line-height: 35px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/btn/btn-orange-right.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+.popLayer .layerBox .contents .mt20 a.gray {
+  display: inline-block;
+  padding-left: 10px;
+  margin-left: 5px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/btn/btn-gray-left2.png);
+  background-repeat: no-repeat;
+}
+.popLayer .layerBox .contents .mt20 a.gray span {
+  display: inline-block;
+  min-width: 50px;
+  height: 39px;
+  padding: 0 15px 0 5px;
+  line-height: 35px;
+  background-image: url(https://secure.nike.co.kr/NKS1/image/web/btn/btn-gray-right2.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+section {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 155px;
+  border: 1px #f00 solid;
+}
+section .banner {
+  width: 100%;
+  position: relative;
+}
+section .banner .content {
+  border: 1px #000 solid;
+  display: none;
+}
+section .banner .content .item {
+  display: inline-block;
+  width: 100%;
+}
+section .banner .content .item .item_bg {
+  width: 100%;
+}
+section .banner .content .item .item_bg img {
+  width: 100%;
+}
+section .banner .content:first-child {
+  display: block;
+}
+section .banner .dot {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+}
+section .banner .dot a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  color: #fff;
+}
+section .category_M {
+  width: 100%;
+  position: relative;
+}
+section .category_M img {
+  width: 100%;
+}
+section .category_M .clx {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  width: 98%;
+  height: 88%;
+}
+section .category_M .clx dt {
+  width: 23%;
+  height: 100%;
+  position: relative;
+  border: 1px #f00 solid;
+}
+section .category_M .clx dt .txt {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 50%;
+  padding-bottom: 2%;
+}
+section .category_M .clx dt p {
+  padding: 0 0 5% 13%;
+  font-size: 1.1em;
+  ext-align: left;
+}
+section .category_M .clx dt p a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+section .category_M .clx dd {
+  width: 23%;
+  height: 44%;
+  margin-bottom: 2.5%;
+  margin-right: 2%;
+  border: 1px #f00 solid;
+}
+section .category_M .clx dd a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+section .category_M .clx dd a p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  color: #444;
+}
+section .category_M .clx .floL {
+  float: left;
+}
+section .category_M2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .category_M2 img {
+  width: 100%;
+}
+section .category_M2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px #f00 solid;
+}
+section .category_M2 a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px #f00 solid;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+section .category_M2_text {
+  width: 100%;
+  padding: 3% 0 6% 0;
+}
+section .category_M2_text p:first-child {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+section .category_M2_text p {
+  text-align: center;
+  margin-bottom: 8px;
+}
+@media (max-width: 1023px) and (min-width: 480px) {
+  .global_gnb_top {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_logo span {
+    margin: 20px;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .men1 a {
+    display: none;
+    transition: 1s;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .women1 a {
+    display: none;
+    transition: 1s;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .boys1 a {
+    display: none;
+    transition: 1s;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .girls1 a {
+    display: none;
+    transition: 1s;
+  }
+  .global_gnb_middle .searchArea {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_main .menu_list {
+    display: block;
+  }
+  .warp {
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+    width: 100%;
+  }
+}
+@media (max-width: 479px) and (min-width: 20px) {
+  .global_gnb_top {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_menu a {
+    display: none;
+  }
+  .global_gnb_middle .searchArea {
+    display: none;
+  }
+}

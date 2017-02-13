@@ -1,0 +1,561 @@
+.bgnone {
+    position:relative;
+
+header {
+    display:block;
+    width:100%;
+    height:80px;
+    padding:30px 0;
+    background-color:#F396A8;
+    box-shadow: 0 2px 10px #666;
+    
+    a {
+        display:block;
+        margin:0px auto;
+        width:200px;
+        height:200px;
+        border:1px #f00 solid;
+        font-size: 0;
+        background-image: url(@bg-img001);
+        background-position: center 0;
+        background-repeat: no-repeat;
+        transition: 1s;
+        &:hover{
+            transform: rotateY(360deg);
+            }
+        }
+    }
+    
+    section.home {
+        display:block;
+        width:100%;
+        height: 500px;
+        margin:0 auto;
+        padding-top: 220px;
+        background-image: url(@bgbgbgbg);
+        background-position: center 90px;
+        background-repeat: no-repeat;
+        
+        .nav-img {
+            width: 820px;
+            margin:0 auto;
+            border:1px #000 solid;
+            
+            div {
+                margin-left: 20px;
+            }
+            
+            .work {
+                display: inline-block;
+                border:1px #f00 solid;
+                
+                a {  
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin: 20px;
+                    
+                    h2 {
+                        display: block;
+                        width: 200px;
+                        height: 100px;
+                        font-size: 0;
+                        background-image: url(@work);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        transform: 1s;
+                        &:hover{
+                        transform:scale(1.5);
+                        }
+                    }
+                    
+                    p {
+                        height: 100px;
+                        width: 200px;
+                        background-color: #ffbbbb;
+                        line-height: 100px;
+                        text-align: center;
+                        font-size: 20px;
+                        color:#fff;
+                        &:hover{
+                        transform:scale(1.1);
+                        background-color: #F396A8;
+                        color: #000;
+                        }
+                    }
+                }
+            }
+            
+            .aboutme {
+                display: inline-block;
+                border:1px #f00 solid;
+                
+                a {  
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin: 20px;
+                    
+                    h2 {
+                        display: block;
+                        width: 200px;
+                        height: 100px;
+                        font-size: 0;
+                        background-image: url(@aboutme);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        transform: 1s;
+                        &:hover{
+                        transform:scale(1.5);
+                        }
+                    }
+                    
+                    p {
+                        height: 100px;
+                        width: 200px;
+                        background-color: #ffbbbb;
+                        line-height: 100px;
+                        text-align: center;
+                        font-size: 20px;
+                        color:#fff;
+                        &:hover{
+                        transform:scale(1.1);
+                        background-color: #F396A8;
+                        color: #000;
+                        }
+                    }
+                }
+            }
+            
+            .contact {
+                display: inline-block;
+                border:1px #f00 solid;
+                
+                a {  
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    margin: 20px;
+                    
+                    h2 {
+                        display: block;
+                        width: 200px;
+                        height: 100px;
+                        font-size: 0;
+                        background-image: url(@contact);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        transform: 1s;
+                        &:hover{
+                        transform:scale(1.5);
+                        }
+                    }
+                    
+                    p {
+                        height: 100px;
+                        width: 200px;
+                        background-color: #ffbbbb;
+                        line-height: 100px;
+                        text-align: center;
+                        font-size: 20px;
+                        color:#fff;
+                        &:hover{
+                        transform:scale(1.1);
+                        background-color: #F396A8;
+                        color: #000;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    
+    // ----------------------------------work 페이지----------------------------------------
+    
+    section#workPage {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border:1px #f00 solid;
+        
+        span {
+            display: block;
+            height: 150px;
+            border: 1px #f00 solid;
+            font-size:0px;
+            background-color: #E04F71;
+            background-image: url(@mainwork);
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 2px 10px #666;
+        }
+        
+        .work-list {
+            // position: relative;
+            border: 3px #00f solid;
+            width: 980px;
+            margin: 100px auto; 
+            
+            // <!-----------------------------RESONSIBLE---------------------------------------------->
+            
+            .btnevent1 {
+                display: inline-block;
+                border-radius:50%;
+                background-color: #ffcccc;
+                margin: 0 20px;
+                
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 150px;
+                    width: 150px;
+                    height: 150px;
+                    border-radius:50%;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:#776c65;
+                    transform: 1s;
+                    &:hover {
+                        background-color: #822020;
+                        color:#ffcccc;
+                    }
+                }
+            }
+            
+            .pop1 {
+                position: absolute;
+                top:0px;
+                left: 50%;
+                margin-left: -500px;
+                width: 1000px;
+                height: 600px;
+                border: 1px #333 solid;
+                background-color: #f4f4f4;
+                display: none;
+                
+                .close1 {
+                    position:absolute;
+                    right:-80px;
+                    background:#333;
+                    border-radius:50% ;
+                    
+                    a {
+                        display: block;
+                        width:60px;
+                        height:60px;
+                        line-height:60px;
+                        text-align: center;
+                        color:#FFF;
+                    }
+                }
+                
+                h2 {
+                    display: block;
+                    height: 60px;
+                    line-height: 60px;
+                    background-color: #fca265;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+            // <!-----------------------------1 RESONSIBLE END------------------------------------------>
+            
+            // <!-------------------------------2 RENEWAL------------------------------------------------>
+            .btnevent2 {
+                display: inline-block;
+                border-radius:50%;
+                background-color: #f7e5cb;
+                margin: 0 20px;
+                
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 150px;
+                    width: 150px;
+                    height: 150px;
+                    border-radius:50%;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:#776c65;
+                    &:hover {
+                        background-color: #bf7232;
+                        color:#f7e5cb;
+                    }
+                }
+            }
+            
+            .pop2 {
+                position: absolute;
+                top:-50px;
+                left: 50%;
+                margin-left: -500px;
+                width: 1000px;
+                height: 600px;
+                border: 1px #333 solid;
+                background-color: #f4f4f4;
+                display: none;
+                
+                .close2 {
+                    position:absolute;
+                    right:-80px;
+                    background:#333;
+                    border-radius:50% ;
+                    
+                    a {
+                        display: block;
+                        width:60px;
+                        height:60px;
+                        line-height:60px;
+                        text-align: center;
+                        color:#FFF;
+                    }
+                }
+                
+                h2 {
+                    display: block;
+                    height: 60px;
+                    line-height: 60px;
+                    background-color: #f9c06e;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+            
+            // <!-------------------------------2-RENEWAL END-------------------------------------------->
+            
+            // <!-------------------------------3-WORDPRESS------------------------------------------------>
+            .btnevent3 {
+                display: inline-block;
+                border-radius:50%;
+                background-color: #d7f9dc;
+                margin: 0 20px;
+                
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 150px;
+                    width: 150px;
+                    height: 150px;
+                    border-radius:50%;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:#776c65;
+                    &:hover {
+                        background-color: #046023;
+                        color:#d7f9dc;
+                    }
+                }
+            }
+            
+            .pop3 {
+                position: absolute;
+                top:-50px;
+                left: 50%;
+                margin-left: -500px;
+                width: 1000px;
+                height: 600px;
+                border: 1px #333 solid;
+                background-color: #f4f4f4;
+                display: none;
+                
+                .close3 {
+                    position:absolute;
+                    right:-80px;
+                    background:#333;
+                    border-radius:50%;
+                    
+                    a {
+                        display: block;
+                        width:60px;
+                        height:60px;
+                        line-height:60px;
+                        text-align: center;
+                        color:#FFF;
+                    }
+                }
+                
+                h2 {
+                    display: block;
+                    height: 60px;
+                    line-height: 60px;
+                    background-color: #046023;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+            
+            // <!-------------------------------3 WORDPRESS END------------------------------------------------>
+            
+            
+            // <!-------------------------------4 BOOTSTRAP------------------------------------------------>
+            .btnevent4 {
+                display: inline-block;
+                border-radius:50%;
+                background-color: #d2e6f9;
+                margin: 0 20px;
+                
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 150px;
+                    width: 150px;
+                    height: 150px;
+                    border-radius:50%;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:#776c65;
+                    &:hover {
+                        background-color: #094893;
+                        color:#d2e6f9;
+                    }
+                }
+            }
+            
+            .pop4 {
+                position: absolute;
+                top:-50px;
+                left: 50%;
+                margin-left: -500px;
+                width: 1000px;
+                height: 600px;
+                border: 1px #333 solid;
+                background-color: #f4f4f4;
+                display: none;
+                
+                .close4 {
+                    position:absolute;
+                    right:-80px;
+                    background:#333;
+                    border-radius:50%;
+                    
+                    a {
+                        display: block;
+                        width:60px;
+                        height:60px;
+                        line-height:60px;
+                        text-align: center;
+                        color:#FFF;
+                    }
+                }
+                
+                h2 {
+                    display: block;
+                    height: 60px;
+                    line-height: 60px;
+                    background-color: #094893;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+            
+            // <!-------------------------------DESIGN------------------------------------------------>
+            
+            .btnevent5 {
+                display: inline-block;
+                border-radius:50%;
+                background-color: #f7d7f4;
+                margin: 0 20px;
+                
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 150px;
+                    width: 150px;
+                    height: 150px;
+                    border-radius:50%;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color:#776c65;
+                    &:hover {
+                        background-color: #800387;
+                        color:#f7d7f4;
+                    }
+                }
+            }
+            
+            .pop5 {
+                position: absolute;
+                top:-50px;
+                left: 50%;
+                margin-left: -500px;
+                width: 1000px;
+                height: 600px;
+                border: 1px #333 solid;
+                background-color: #f4f4f4;
+                display: none;
+                
+                .close5 {
+                    position:absolute;
+                    right:-80px;
+                    background:#333;
+                    border-radius:50%;
+                    
+                    a {
+                        display: block;
+                        width:60px;
+                        height:60px;
+                        line-height:60px;
+                        text-align: center;
+                        color:#FFF;
+                    }
+                }
+                
+                h2 {
+                    display: block;
+                    height: 60px;
+                    line-height: 60px;
+                    background-color: #800387;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    }
+    
+    .bl{
+        position:fixed;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        background-color: rgba(0,0,0,.8);
+    }
+    
+    
+    article {
+        width: 100%;
+        height: 100%;
+        border:1px #f00 solid;
+        
+        .warp {
+             width: 100%;
+             height:100%;
+             background-attachment: fixed;
+        }
+        
+        .aa {
+            background-image: url(@articlebg1);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .bb {
+            background-attachment: local;
+            background-image: url(@articlebg2);
+            background-position: center;
+            background-repeat: no-repeat;
+            height:500px;
+            text-align:center;
+        }
+        
+        .bb h2 {font-size: 62px; color: #fff;}
+        .bb p {font-size: 20px; line-height:40px;}
+        .bb h3 {
+            background-image: url(@articlebg1);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .cc {background-image:url(@articlebg3);}
+    }

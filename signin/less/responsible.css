@@ -1,0 +1,44 @@
+@media (max-width: 1023px) and (min-width: 480px) {
+  .global_gnb_top {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_logo span {
+    margin: 20px;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .men1 a {
+    display: none;
+    transition: 1s;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .women1 a {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .boys1 a {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_main .global_gnb_menu .girls1 a {
+    display: none;
+  }
+  .global_gnb_middle .searchArea {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_main .menu_list {
+    display: block;
+  }
+  .warp {
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+    width: 100%;
+  }
+}
+@media (max-width: 479px) and (min-width: 20px) {
+  .global_gnb_top {
+    display: none;
+  }
+  .global_gnb_middle .global_gnb_menu a {
+    display: none;
+  }
+  .global_gnb_middle .searchArea {
+    display: none;
+  }
+}
