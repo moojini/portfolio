@@ -17,6 +17,18 @@ body {
 img {
   border: 0;
 }
+caption {
+  display: none;
+}
+table {
+  border-spacing: 0;
+}
+.Txt_right {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 10;
+}
 #header {
   background-color: #fff;
 }
@@ -53,16 +65,18 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 6;
 }
 #tnb .tnb_inner .infoBox div {
   float: left;
+}
+#tnb .tnb_inner .infoBox div a {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
   width: 69px;
   height: 45px;
   padding-bottom: 50px;
-}
-#tnb .tnb_inner .infoBox div a {
-  font-size: 0;
-  text-indent: -9999px;
 }
 #tnb .tnb_inner .infoBox .store {
   background-image: url("http://www.paris.co.kr/images/tnb/bgStoreB.png");
@@ -115,10 +129,11 @@ img {
 #lnb .lnb_inner form #global_search input {
   background: transparent;
   border: 0;
-  padding-top: 6px;
+  padding: 6px 0;
   width: 210px;
   color: #656464;
   display: inline-block;
+  vertical-align: top;
 }
 #lnb .lnb_inner form #global_search button {
   border: 0;
@@ -337,7 +352,6 @@ img {
   height: 378px;
   float: left;
   margin-top: 11px;
-  border: 1px #f00 solid;
   background-color: #fff;
 }
 .menu_title {
@@ -360,8 +374,67 @@ img {
   height: 300px;
   float: left;
   background-color: #fff;
-  border-bottom: 1px #f00 solid;
-  border-top: 1px #f00 solid;
+}
+.middle_content .pb_product .product_wrap_left {
+  width: 75%;
+  float: left;
+  position: relative;
+}
+.middle_content .pb_product .product_wrap_left .Txt_right {
+  right: 20px;
+}
+.middle_content .pb_product .product_wrap_left .inner {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+}
+.middle_content .pb_product .product_wrap_left .inner ul {
+  margin: 0 30px;
+  width: 55%;
+  height: 250px;
+  border: 1px #f00 solid;
+  text-align: center;
+  overflow: hidden;
+}
+.middle_content .pb_product .product_wrap_left .inner ul li {
+  display: inline-block;
+}
+.middle_content .pb_product .product_wrap_left .inner ul li a {
+  display: block;
+}
+.middle_content .pb_product .product_wrap_left .inner ul li a img {
+  width: 100%;
+}
+.middle_content .pb_product .product_wrap_left .inner ul li a span {
+  font-size: 15px;
+  color: #494745;
+  font-weight: bold;
+}
+.middle_content .pb_product .product_wrap_left .bntproductLeft {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+}
+.middle_content .pb_product .product_wrap_left .bntproductRight {
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  right: -5%;
+  z-index: 11;
+}
+.middle_content .pb_product .product_wrap_right {
+  float: right;
+  position: relative;
+}
+.middle_content .pb_product .product_wrap_right span {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  color: #fff;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: bold;
 }
 .middle_content .pb_Wrap {
   width: 51%;
@@ -369,8 +442,6 @@ img {
   height: 300px;
   float: left;
   margin-left: 10px;
-  border-bottom: 1px #f00 solid;
-  border-top: 1px #f00 solid;
 }
 .middle_content .pb_Wrap .pbSpecial {
   width: 233px;
@@ -885,7 +956,7 @@ img {
   content: "";
   clear: both;
 }
-#store .tab_title {
+.tab_title {
   width: 930px;
   border-bottom: 1px #015299 solid;
   margin: 12px 0 13px 34px;
@@ -906,10 +977,14 @@ img {
   margin-left: 126px;
   margin-right: 80px;
 }
+#store .storeSearch .map_content img {
+  width: 100%;
+}
 #store .storeSearch .map_select {
   float: left;
   margin-top: 115px;
   border: 1px #f00 solid;
+  position: relative;
 }
 #store .storeSearch .map_select p {
   padding-bottom: 10px;
@@ -928,11 +1003,36 @@ img {
   width: 181px;
   height: 17px;
   line-height: 17px;
-  border: 1px #f00 solid;
+  font-weight: bold;
   cursor: pointer;
-  background-image: url("http://www.paris.co.kr/images/common/bgSelect.png");
+  background-image: url("http://www.paris.co.kr/images/customer/btnArrowOff.gif");
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 90% 40%;
+}
+#store .storeSearch .map_select .select_list {
+  display: none;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  width: 181px;
+  height: 200px;
+  padding: 8px 7px 8px 7px;
+  overflow-y: scroll;
+  border: 1px solid #cccccc;
+  background-color: #fff;
+}
+#store .storeSearch .map_select .select_list li {
+  padding: 5px 0;
+}
+#store .storeSearch .map_select .select_list .list_f {
+  height: 17px;
+  margin-bottom: 10px;
+  line-height: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url("http://www.paris.co.kr/images/customer/btnArrowOn.gif");
+  background-repeat: no-repeat;
+  background-position: 90% 40%;
 }
 #store .storeSearch .map_select select {
   display: none;
@@ -943,7 +1043,8 @@ img {
   padding: 9px;
   height: 15px;
   margin: 10px 0;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
+  font-weight: bold;
 }
 #store .storeSearch .map_select button {
   border: 0;
@@ -961,4 +1062,197 @@ img {
   clear: both;
   display: block;
   content: "";
+}
+#store .storelist {
+  width: 930px;
+  margin-top: 30px;
+  padding: 15px 0 20px 0;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+}
+#store .storelist table {
+  width: 100%;
+}
+#store .storelist table thead th {
+  padding: 11px 0;
+  border-top: 2px solid #015299;
+  border-bottom: 1px solid #015299;
+  color: #6c6c6c;
+  font-size: 13px;
+}
+#store .storelist table tbody .add_left {
+  text-align: left;
+}
+#store .storelist table tbody td {
+  padding: 13px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 13px;
+  color: #6c6c6c;
+}
+#store .storelist table tbody td a {
+  color: #6c6c6c;
+}
+#store .storepage {
+  padding-bottom: 20px;
+  text-align: center;
+}
+#store .storepage span {
+  display: inline-block;
+  text-indent: -9999px;
+  margin: 0 5px;
+}
+#store .storepage span a {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+#store .storepage span .First_Page {
+  background-image: url("http://www.paris.co.kr/images/common/btnType02LeftOff.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .First_Page:hover {
+  background-image: url("http://www.paris.co.kr/images/common/btnType02LeftOn.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .Previous {
+  width: 13px;
+  height: 25px;
+  background-image: url("http://www.paris.co.kr/images/common/btnType02LeftOff.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .Previous:hover {
+  background-image: url("http://www.paris.co.kr/images/common/btnType02LeftOn.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .Next {
+  width: 13px;
+  height: 25px;
+  background-image: url("http://www.paris.co.kr/images/common/btnType02RightOff.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .Next:hover {
+  background-image: url("http://www.paris.co.kr/images/common/btnType02RightOn.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .Last_Page {
+  background-image: url("http://www.paris.co.kr/images/common/btnType02RightOff.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage span .Last_Page:hover {
+  background-image: url("http://www.paris.co.kr/images/common/btnType02RightOn.gif");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#store .storepage ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+#store .storepage li {
+  display: inline-block;
+  padding: 0 5px;
+  width: 25px;
+  height: 25px;
+}
+#store .storepage li a {
+  font-size: 24px;
+  color: #64625f;
+}
+#store .storepage:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#promotion .promotion_ing {
+  width: 928px;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 2px solid #015299;
+}
+#promotion .promotion_ing .Txt_right {
+  top: -15px;
+  right: 40px;
+}
+#promotion .promotion_ing .promotion_inner {
+  width: 926px;
+  height: 309px;
+  border: 1px #ccc solid;
+  position: relative;
+}
+#promotion .promotion_ing .promotion_inner .innerBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#promotion .promotion_ing .promotion_inner .innerBox img {
+  width: 100%;
+}
+#promotion .promotion_ing .promotion_ing_paper {
+  padding: 10px 0 16px 0;
+  text-align: center;
+}
+#promotion .promotion_ing .promotion_ing_paper .active {
+  background-color: #00519a;
+  width: 40px;
+}
+#promotion .promotion_ing .promotion_ing_paper a {
+  display: inline-block;
+  border-radius: 18px;
+  margin: 0 5px;
+  width: 15px;
+  height: 16px;
+  background-color: #a9a8a6;
+  font-size: 0;
+  text-indent: -9999px;
+  vertical-align: top;
+}
+#promotion .event_list {
+  width: 928px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+}
+#promotion .event_list li {
+  width: 928px;
+  height: 147px;
+  padding: 16px 0;
+  border-bottom: 1px #ccc dashed;
+}
+#promotion .event_list li img {
+  width: 378px;
+  height: 145px;
+  float: left;
+  border: 1px solid #ccc;
+}
+#promotion .event_list li .evertTxt {
+  width: 548px;
+  height: 147px;
+  float: left;
+  color: #6c6c6c;
+  font-weight: bold;
+  line-height: 17px;
+}
+#promotion .event_list li .evertTxt h3 {
+  padding: 20px;
+  font-size: 16px;
+}
+#promotion .event_list li .evertTxt h4 {
+  padding: 0 20px;
+  font-size: 12px;
+  height: 50px;
+  font-weight: normal;
+}
+#promotion .event_list li .evertTxt span {
+  display: block;
+  padding: 16px 20px;
+  font-size: 14px;
+  letter-spacing: -1px;
 }

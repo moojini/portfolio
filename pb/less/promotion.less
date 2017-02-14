@@ -1,0 +1,107 @@
+
+#promotion {
+    
+    // 프로모션 진행중인 이벤트
+    .promotion_ing {
+        width: 928px;
+        margin: 0 auto;
+        position: relative;
+        border-bottom:2px solid #015299;
+        
+        .Txt_right {
+            top:-15px;
+            right: 40px;
+        }
+        
+        .promotion_inner {
+            width: 926px;
+            height: 309px;
+            border:1px #ccc solid;
+            position: relative;
+            
+            .innerBox {
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .promotion_ing_paper {
+            padding: 10px 0 16px 0;
+            text-align: center;
+            
+            .active {
+                background-color: #00519a;
+                width: 40px;
+            }
+            
+            a {
+                display: inline-block;
+                border-radius:18px;
+                margin: 0 5px;
+                width: 15px;
+                height: 16px;
+                background-color: #a9a8a6;
+                font-size: 0;
+                text-indent: -9999px;
+                vertical-align: top;
+            }
+        }
+    }
+    
+    
+    // 프로모션 진행중인 이벤트 리스트
+    .event_list {
+        width: 928px;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 20px;
+        
+        li {
+            width: 928px;
+            height: 147px;
+            padding: 16px 0;
+            border-bottom: 1px #ccc dashed;
+            
+            img {
+                width: 378px;
+                height: 145px;
+                float: left;
+                border:1px solid #ccc;
+            }
+            
+            .evertTxt {
+                width: 548px;
+                height: 147px;
+                float: left;
+                color:#6c6c6c;
+                font-weight: bold;
+                line-height: 17px;
+                
+                h3 {
+                    padding: 20px;
+                    font-size: 16px;
+                }
+                
+                h4 {
+                    padding: 0 20px;
+                    font-size: 12px;
+                    height: 50px;
+                    font-weight: normal;
+                }
+                
+                span {
+                    display: block;
+                    padding: 16px 20px;
+                    font-size: 14px;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+}
