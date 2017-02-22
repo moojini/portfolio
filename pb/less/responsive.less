@@ -1,0 +1,445 @@
+@media screen and (max-width:1040px) {
+    
+    .MM_size {
+        
+        #gnb {
+        
+            height:60px;
+            background-color: #005199;
+            
+            .gnb_inner {
+                // max-width: 996px;
+                // 맥스를 왜 쓰는 건가요? 그냥 width값만 주면 안되나요?
+                width: 100%;
+                
+                .nav {
+                    display: none;
+                }
+                
+                .infoBox {
+                    left: 0;
+                    
+                    div {
+                        width: 33%;
+                        height: 60px;
+                        
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+                            
+                        }
+                    }
+                    .store {
+                        .background(url("http://www.paris.co.kr/images/tnb/bgStoreBSSize.gif"),no-repeat,50% 50%);
+                        border-right:1px solid #00357a;
+                    }
+                    
+                    .coupon {
+                        .background(url("http://www.paris.co.kr/images/tnb/bgCouponBSSize.gif"),no-repeat,50% 50%);
+                        border-right:1px solid #00357a;
+                    }
+                    
+                    .point {
+                        .background(url("http://www.paris.co.kr/images/tnb/bgPointBSSize.gif"),no-repeat,50% 50%);
+                    }
+                }
+            }
+        }
+        
+        #lnb {
+            height: 90px;
+            
+            .lnb_inner {
+                
+                .logo {
+                    padding-top: 20px;
+                }
+                
+                form {
+                    width: 100%;
+                    // display:none;
+                    
+                    #global_search {
+                        width: 80%;
+                        top:100px;
+                        left:0%;
+                        margin-left: 4%;
+                        border-radius:30px;
+                        
+                        input {
+                            width: 90%;
+                            height: 50px;
+                            // vertical-align: top;
+                             vertical-align: middle;
+                            font-size: 20px;
+                        }
+                        
+                        button {
+                            width: 35px;
+                            height: 35px;
+                            border:1px #f00 solid;
+                            .background(url("https://www.paris.co.kr/images/common/btnGlobalSearchBS2.gif"),no-repeat,50% 50%);
+                        }
+                    }
+                }
+                
+                .menu_Ikon {
+                    display: block;
+                    width: 90px;
+                    height: 91px;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    .background(url("http://www.paris.co.kr/images/tnb/btnMenuB.gif"),no-repeat,0 0);
+                }
+                
+                .search_Ikon {
+                    display: block;
+                    width: 90px;
+                    height: 91px;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    .background(url("http://www.paris.co.kr/images/common/btnGlobalSearchBS.gif"),no-repeat,0 0);
+                }
+                
+                .searchCloseBtn {
+                    display: block;
+                    width: 35px;
+                    height: 35px;
+                    position: absolute;
+                    top:110px;
+                    right:2%;
+                    .background(url("https://www.paris.co.kr/images/common/btnGlobalSearchClose.png"),no-repeat,50% 50%);
+                }
+            }
+        }
+        #tnb .depth1 li.on>a {background:none; color: none;}
+        
+        #tnb .depth1 li>a {text-align: left;}
+        
+        #tnb {
+            height: 0;
+            
+            .tnb_inner {
+                display: none;
+                
+                // 디스플레이 none 확인 하기 
+                position: absolute;
+                right: 0%;
+                top:0;
+                width: 540px;
+                height: 1500px;
+                background-color:#f5f5f5;
+                z-index: 50;
+                border:1px #fff solid;
+                
+                
+                .addMenu {
+                    border-bottom:1px solid #fff;
+                    display: block;
+                    
+                    a {
+                        display: block;
+                        width: 33.2%;
+                        height: 195px;
+                        float: left;
+                        border-right: 1px #3267a3 solid;
+                        border-bottom: 2px #3267a3 solid;
+                        
+                        span {
+                            font-size: 25px;
+                            color:#656464;
+                            font-family: 'Malgn Gothic';
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            line-height: 190px
+                        }
+                    }
+                    
+                    .last {
+                        border-right:0;
+                    }
+                }
+                
+                .addMenu:after {
+                    display: block;
+                    clear:both;
+                    content: "";
+                }
+                
+                .depth1 {
+                    
+                    .depth1_inner {
+                        float: none;
+                        width: 100%;
+                        height: 79px;
+                        text-align: left;
+                        
+                        .depth1_title {
+                            display: block;
+                            // padding: 20px 0 20px 40px;
+                            padding-left: 40px;
+                            width: 90%;
+                            margin: 0 auto;
+                            height: 79px;
+                            line-height: 79px;
+                            border-bottom:2px #dadada solid;
+                            .background(url("http://www.paris.co.kr/images/common/bulGnbArrowDownB.gif"),no-repeat,95% 50%);
+                            
+                            span {
+                                font-size: 20px;
+                                font-weight: bold;
+                                color: #3267a3;
+                                letter-spacing: 2px;
+                            }
+                        }
+                        
+                        .tnb_inner_wrap {
+                            // padding-left: 40px;
+                            top:80px;
+                            width: 100%;
+                            border-bottom: 0;
+                            
+                            .depth2 {
+                                margin-left: 0;
+                                
+                                li {
+                                    float: none;
+                                    padding: 0 40px 0 40px;
+                                    
+                                    a {
+                                        display: block;
+                                        height: auto;
+                                        padding: 15px 20px 13px 20px;
+                                        border-bottom: 1px #dadada solid;
+                                        color: #949494;
+                                        .background(url("http://www.paris.co.kr/images/common/bulGnbArrowRightB.png"),no-repeat,95% 55%);
+                                        
+                                        &:hover {
+                                            color: #005199;
+                                            .background(url("http://www.paris.co.kr/images/common/bulGnbArrowRightB.png"),no-repeat,95% 55%);
+                                        }
+                                        
+                                        span {
+                                            font-family:'Dotum';
+                                            font-size: 16px;
+                                            letter-spacing: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        #top_content {
+            
+            .left_slide {
+                max-width: none;
+                position: relative;
+                width: 98%;
+                height: 419px;
+                float: left;
+                margin: 0 10px;
+                
+                .introWrap {
+                    // margin-left: 5px;
+                    
+                    max-width: 100%;
+                    border:1px #f00 solid;
+                    
+                    .intro {
+                        max-width: 100%;
+                        
+                        img { 
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    
+                    .pager {
+                        margin-left: -5%;
+                    }
+                }
+                
+                .quickMenu {
+                    max-width: none;
+                    width: 100%;
+                    height: 132px;
+                
+                    .quickBox {
+                        height: 130px;
+                        
+                        .quickBox_Ikon {
+                            display: none;
+                        }
+                        
+                        .quickBox_Ikon_Mobile {
+                            display: block;
+                            height: 80px;
+                            padding-top: 48px;
+                            width: 100%;
+                            
+                            li {
+                                float: left;
+                                width: 14.1%;
+                                height: 55px;
+                                text-align:center;
+                                border-right:1px solid #e5e5e5;
+                                
+                                img {
+                                    margin-top: -15px;
+                                }
+                            }
+                            
+                            .last {border:0;}
+                        }
+                    }
+                }
+            }
+            
+            .right_facebook {
+                margin: 0 10px;
+                margin-top: 11px;
+                max-width:none;
+                width: 98%;
+                
+            }
+        }
+        
+        .middle_content {
+            margin-top: 10px;
+            max-width: 996px;
+            width: 100%;
+            
+            // 슬라이드
+            .pb_product {
+                width: 98%;
+                max-width: none;
+                margin: 0 10px;
+                
+                .pb_product_inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                
+                .product_wrap_left {
+                    width: 75%;
+                    
+                    .Txt_right {right: 8%;}
+                    
+                    .inner {
+                        
+                        ul {
+                            margin-left: 20%;
+                            margin-top: 30px;
+                            width: 200px;
+                            height: 250px;
+                            
+                            li {
+                                display: inline-block;
+                                
+                                a {
+                                    width: 200px;
+                                    height: 250px;
+                                    display:block;
+                                    
+                                    img {
+                                        width: 100%;
+                                    }
+                                    
+                                    span {
+                                        font-size: 15px;
+                                        color:#494745;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .bntproductRight {
+                        right: -10%;
+                    }
+                }
+                }
+            }
+            
+            // 박스 4개
+            .pb_Wrap {
+                margin-top: 10px;
+                margin-left: 10px;
+                max-width: none;
+                position: relative;
+                width: 48%;
+                
+                .pbSpecial {
+                    width: 100%;
+                    
+                    .specialWrap {
+                        width: 100%;
+                        max-width: 466px;
+                        background-color: #fff;
+                        
+                        a {
+                            display: block;
+                            width: 100%;
+                            max-width: 466px;
+                        }
+                    }
+                }
+                
+                .EventBg {
+                    position: absolute;
+                    top:0px;
+                    right: 0%;
+                    z-index: 1;
+                    left: auto;
+                    //  기존left를 지우기 위해서 auto 를 써야만 한다!!!!!!!!
+                }
+                
+                .pbNews {
+                    width: 100%;
+                }
+                
+                .pbDeliveryEshop {
+                    width: 100%; 
+                    
+                    .deliveryWrap {
+                        width: 100%;
+                    }
+                }
+                
+                .pbFran {
+                    width: 100%;
+                }
+            }
+        }
+        
+        #footer {
+            display: none;
+        }
+        
+        .footer_nav {
+            margin-top: 30px;
+        }
+        
+        .footer_address {
+            margin-top: 20px;
+            
+            span {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 27px;
+            }
+        }
+        
+        
+        // 밑에 } 두개는 항상 있어야 하는 것 
+    }
+    
+}

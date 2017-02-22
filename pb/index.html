@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>paris</title>
     <link rel="stylesheet" href="css/import.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+
+<body id="main" class="MM_size">
     
     <!-----------------header-------------------------------------------------->
     
-    <div id="header">
-        <div id="tnb">
-            <div class="tnb_inner">
+    <div id="header" class="MM_size">
+        <div id="gnb">
+            <div class="gnb_inner">
                 <div class="nav">
                     <ul>
                         <li class="Ikon"><a href="#">로그인</a></li>
@@ -47,15 +50,24 @@
                         <button type="submit">검색</button>
                     </fieldset>
                 </form>
+                <!--반응형때 추가하는것-->
+                <a href="#" class="menu_Ikon"></a>
+                <a href="#" class="search_Ikon"></a>
+                <a href="#" class="searchCloseBtn"></a>
             </div>
         </div>
-        <div id="gnb">
-            <div class="gnb_inner">
+        <div id="tnb">
+            <div class="tnb_inner">
+                <div class="addMenu">
+                    <a href="#"><span>LOGIN</span></a>
+                    <a href="#"><span>JOIN</span></a>
+                    <a href="#" class="last"><span>FACEBOOK</span></a>
+                </div>
                 <ul class="depth1">
                     <li class="on depth1_inner">
                         <a href="#" class="depth1_title"><span>product</span></a>
                         
-                        <div class="gnb_inner_wrap">
+                        <div class="tnb_inner_wrap">
                             <ul class="depth2">
                                 <li><a href="#"><span>bread</span></a></li>
                                 <li><a href="#"><span>cake</span></a></li>
@@ -65,61 +77,61 @@
                                 <li><a href="#"><span>sandwich</span></a></li>
                                 <li><a href="#"><span>others</span></a></li>
                                 <li><a href="#"><span>pb collection</span></a></li>
-                                <li><a href="#"><span>상품교환권&기프트카드</span></a></li>
+                                <li><a href="#" class="last"><span>상품교환권&기프트카드</span></a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="depth1_inner">
                         <a href="#" class="depth1_title"><span>store</span></a>
-                        <!--<div class="gnb_inner_wrap">-->
-                        <!--    <ul class="depth2" style="margin-left:170px;">-->
-                        <!--        <li><a href="#"><span>매장찾기</span></a></li>-->
-                        <!--        <li><a href="#"><span>매장찾기</span></a></li>-->
-                        <!--        <li><a href="#"><span>매장찾기</span></a></li>-->
-                        <!--        <li><a href="#"><span>매장찾기</span></a></li>-->
-                        <!--    </ul>-->
-                        <!--</div>-->
+                        <div class="tnb_inner_wrap">
+                            <ul class="depth2">
+                                <li><a href="#"><span>매장찾기</span></a></li>
+                                <li><a href="#"><span>매장찾기</span></a></li>
+                                <li><a href="#"><span>매장찾기</span></a></li>
+                                <li><a href="#" class="last"><span>매장찾기</span></a></li>
+                            </ul>
+                        </div>
                    </li>
                     <li class="depth1_inner">
                         <a href="#" class="depth1_title"><span>promotion</span></a>
-                        <!--<div class="gnb_inner_wrap">-->
-                        <!--    <ul class="depth2" style="margin-left:335px;">-->
-                        <!--        <li><a href="#"><span>진행중 이벤트</span></a></li>-->
-                        <!--        <li><a href="#"><span>진행중 이벤트</span></a></li>-->
-                        <!--        <li><a href="#"><span>진행중 이벤트</span></a></li>-->
-                        <!--        <li><a href="#"><span>진행중 이벤트</span></a></li>-->
-                        <!--    </ul>-->
-                        <!--</div>-->
+                        <div class="tnb_inner_wrap">
+                            <ul class="depth2" style="margin-left:335px;">
+                                <li><a href="#"><span>진행중 이벤트</span></a></li>
+                                <li><a href="#"><span>진행중 이벤트</span></a></li>
+                                <li><a href="#"><span>진행중 이벤트</span></a></li>
+                                <li><a href="#"><span>진행중 이벤트</span></a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="depth1_inner">
                         <a href="#" class="depth1_title"><span>brand story</span></a>
-                        <!--<div class="gnb_inner_wrap">-->
-                        <!--    <ul class="depth2" style="margin-left:500px;">-->
-                        <!--        <li><a href="#"><span>Ad Gallery</span></a></li>-->
-                        <!--        <li><a href="#"><span>Ad Gallery</span></a></li>-->
-                        <!--        <li><a href="#"><span>Ad Gallery</span></a></li>-->
-                        <!--    </ul>-->
-                        <!--</div>-->
+                        <div class="tnb_inner_wrap">
+                            <ul class="depth2" style="margin-left:500px;">
+                                <li><a href="#"><span>Ad Gallery</span></a></li>
+                                <li><a href="#"><span>Ad Gallery</span></a></li>
+                                <li><a href="#"><span>Ad Gallery</span></a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="depth1_inner">
                         <a href="#" class="depth1_title"><span>customer center</span></a>
-                        <!--<div class="gnb_inner_wrap">-->
-                        <!--    <ul class="depth2" style="margin-left:665px;">-->
-                        <!--        <li><a href="#"><span>자주하는 질문</span></a></li>-->
-                        <!--        <li><a href="#"><span>자주하는 질문</span></a></li>-->
-                        <!--        <li><a href="#"><span>자주하는 질문</span></a></li>-->
-                        <!--    </ul>-->
-                        <!--</div>-->
+                        <div class="tnb_inner_wrap">
+                            <ul class="depth2" style="margin-left:665px;">
+                                <li><a href="#"><span>자주하는 질문</span></a></li>
+                                <li><a href="#"><span>자주하는 질문</span></a></li>
+                                <li><a href="#"><span>자주하는 질문</span></a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="depth1_inner">
                         <a href="#" class="depth1_title"><span>my page</span></a>
-                        <!--<div class="gnb_inner_wrap">-->
-                        <!--    <ul class="depth2">-->
-                        <!--        <li><a href="#"><span>MY 파리바게뜨</span></a></li>-->
-                        <!--        <li><a href="#"><span>MY 파리바게뜨</span></a></li>-->
-                        <!--        <li><a href="#"><span>MY 파리바게뜨</span></a></li>-->
-                        <!--    </ul>-->
-                        <!--</div>-->
+                        <div class="tnb_inner_wrap">
+                            <ul class="depth2">
+                                <li><a href="#"><span>MY 파리바게뜨</span></a></li>
+                                <li><a href="#"><span>MY 파리바게뜨</span></a></li>
+                                <li><a href="#"><span>MY 파리바게뜨</span></a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -128,13 +140,15 @@
     
     <!-----------------header END---------------------------------------------->
     
-    <div class="top_content">
+    <div id="top_content">
         
         <div class="left_slide">
             <div class="introWrap">
                 <div class="intro">
-                    <div>
-                        <a href="#"><img src="http://www.paris.co.kr/cdn/event/2016/franchise/images/main.jpg" alt="광고입니다"></a>
+                    <div class="on">
+                        <a href="#">
+                            <img src="http://www.paris.co.kr/cdn/event/2017/strawberry/images/main.jpg" alt="광고입니다">
+                        </a>
                     </div>
                     <div>
                         <a href="#"><img src="http://www.paris.co.kr/cdn/event/2017/dessert/02/images/main.jpg" alt="광고입니다"></a>
@@ -149,7 +163,7 @@
                         <a href="#"><img src="http://www.paris.co.kr/cdn/event/2016/morning/images/main.jpg" alt="광고입니다"></a>
                     </div>
                     <div>
-                        <a href="#"><img src="http://www.paris.co.kr/cdn/event/2017/flower/images/main.jpg" alt="광고입니다"></a>
+                        <a href="#"><img src="http://www.paris.co.kr/cdn/event/2016/franchise/images/main.jpg" alt="광고입니다"></a>
                     </div>
                     
                     <!--버튼부분-->
@@ -182,6 +196,19 @@
                             <li class="last"><a href="#"><img src="https://www.paris.co.kr/images/main/quickChef.jpg" alt="샌드위치세프모집"></a></li>
                         </ul>
                     </div>
+                    <!--모바일에서 보여지는 아이콘-->
+                    <div class="quickBox_Ikon_Mobile">
+                        <ul>
+                            <li><a href="#"><img src="https://www.paris.co.kr/images/main/quickFindStoreS_mod.jpg" alt="매장찾기"></a></li>
+                            <li><a href="#"><img src="https://www.paris.co.kr/images/main/quickCardBnfS_mod.jpg" alt="제휴카드안내"></a></li>
+                            <li><a href="#"><img src="https://www.paris.co.kr/images/main/quickPromoS_mod.jpg" alt="진행중이벤트"></a></li>
+                            <li><a href="#"><img src="https://www.paris.co.kr/images/main/quickPromoES_mod.jpg" alt="당첨자발표"></a></li>
+                            <li><a href="#"><img src="https://www.paris.co.kr/images/main/quickFbS_mod.jpg" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="https://www.paris.co.kr/images/main/quickChef_mobile.jpg" alt="샌드위치셰프모집"></a></li>
+                            <li class="last"><a href="#"><img src="https://www.paris.co.kr/images/main/quickKakao_renew.jpg" alt="플러스친구"></a></li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,32 +230,54 @@
         
         <!---------------------슬라이드 event ------------------------------------->
         <div class="pb_product">
-            <div class="menu_title">
-                <img src="https://www.paris.co.kr/images/main/productTitle_mod.jpg" alt="productTitle">
-            </div>
-            <div class="product_wrap_left">
-                <div class="Txt_right"><img src="http://www.paris.co.kr/images/main/Pb_product_txt_04.png" alt="이달의 신제품"></div>
-                <div class="inner">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="http://www.paris.co.kr/data/product/eum170202.jpg" alt="카페로마노 케이크">
-                                <span>카페로마노 케이크</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="http://www.paris.co.kr/data/product/eum170202.jpg" alt="카페로마노 케이크">
-                                <span>카페로마노 케이크</span>
-                            </a>
-                        </li>
-                    </ul>
+            <div class="pb_product_inner">
+                <div class="menu_title">
+                    <img src="https://www.paris.co.kr/images/main/productTitle_mod.jpg" alt="productTitle">
                 </div>
-                <a href="#" class="bntproductLeft"><img src="http://www.paris.co.kr/images/main/btnIntroLeft_mod.png"></a>
-                <a href="#" class="bntproductRight"><img src="http://www.paris.co.kr/images/main/btnIntroRight_mod.png"></a>
-            </div>
-            <div class="product_wrap_right">
-                <a href="#"><img src="http://www.paris.co.kr/images/main/productTabOn_l_mod.png" alt="이달의추천제품"><span>이달의<br/>신제품</span></a>
+                <div class="product_wrap_left">
+                    <div class="Txt_right"><img src="http://www.paris.co.kr/images/main/Pb_product_txt_04.png" alt="이달의 신제품"></div>
+                    <div class="inner">
+                        <ul>
+                            <li class="on">
+                                <div>
+                                <a href="#">
+                                    <img src="http://www.paris.co.kr/data/product/eum170202.jpg" alt="카페로마노 케이크">
+                                    <span>카페로마노 케이크</span>
+                                </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                <a href="#">
+                                    <img src="https://www.paris.co.kr/data/product/blueberrycake.jpg" alt="나만의 미니블루베리">
+                                    <span>나만의 미니블루베리케이크</span>
+                                </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                <a href="#">
+                                    <img src="https://www.paris.co.kr/data/product/eum129249@@_web.jpg" alt="엄마레시피 우리당근케이크">
+                                    <span>엄마레시피 우리당근케이크</span>
+                                </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                <a href="#">
+                                    <img src="https://www.paris.co.kr/data/product/170202.jpg" alt="나만의 미니초코케이크">
+                                    <span>나만의 미니초코케이크</span>
+                                </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="bntproductLeft"><img src="http://www.paris.co.kr/images/main/btnIntroLeft_mod.png"></a>
+                    <a href="" class="bntproductRight"><img src="http://www.paris.co.kr/images/main/btnIntroRight_mod.png"></a>
+                </div>
+                <div class="product_wrap_right">
+                    <a href="#"><img src="http://www.paris.co.kr/images/main/productTabOn_l_mod.png" alt="이달의추천제품"><span>이달의<br/>신제품</span></a>
+                </div>
             </div>
             
         </div>
@@ -251,9 +300,9 @@
                 </div>
                 <div class="newsWrap">
                     <ol>
-                        <li><a href="#">시럽, 클립, 스마트월렛 해피포인트 ...</a></li>
-                        <li><a href="#">10월 디저트/브레드 데이 미운영 공지</a></li>
-                        <li><a href="#">행복한 동행 파리바게뜨</a></li>
+                        <li><a href="#">시럽, 클립, 스마트월렛 해피포인트 서비스 종료</a></li>
+                        <li><a href="#">10월 디저트/브레드 데이 미운영 공지 10월 디저트/브레드 데이 미운영 공지</a></li>
+                        <li><a href="#">행복한 동행 파리바게뜨 행복한 동행 파리바게뜨</a></li>
                         <li><a href="#">파리바게뜨 홈페이지 서비스 이용 제...</a></li>
                         <li><a href="#">파리바게뜨 홈페이지 서비스 이용 제...</a></li>
                     </ol>

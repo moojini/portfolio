@@ -29,75 +29,457 @@ table {
   right: 0px;
   z-index: 10;
 }
+.menu_title {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  display: inline-block;
+  z-index: 3;
+}
+.tab_title {
+  width: 930px;
+  border-bottom: 1px #015299 solid;
+  margin: 12px 0 13px 34px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1040px) {
+  .MM_size #gnb {
+    height: 60px;
+    background-color: #005199;
+  }
+  .MM_size #gnb .gnb_inner {
+    width: 100%;
+  }
+  .MM_size #gnb .gnb_inner .nav {
+    display: none;
+  }
+  .MM_size #gnb .gnb_inner .infoBox {
+    left: 0;
+  }
+  .MM_size #gnb .gnb_inner .infoBox div {
+    width: 33%;
+    height: 60px;
+  }
+  .MM_size #gnb .gnb_inner .infoBox div a {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .MM_size #gnb .gnb_inner .infoBox .store {
+    background-image: url("http://www.paris.co.kr/images/tnb/bgStoreBSSize.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-right: 1px solid #00357a;
+  }
+  .MM_size #gnb .gnb_inner .infoBox .coupon {
+    background-image: url("http://www.paris.co.kr/images/tnb/bgCouponBSSize.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-right: 1px solid #00357a;
+  }
+  .MM_size #gnb .gnb_inner .infoBox .point {
+    background-image: url("http://www.paris.co.kr/images/tnb/bgPointBSSize.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .MM_size #lnb {
+    height: 90px;
+  }
+  .MM_size #lnb .lnb_inner .logo {
+    padding-top: 20px;
+  }
+  .MM_size #lnb .lnb_inner form {
+    width: 100%;
+  }
+  .MM_size #lnb .lnb_inner form #global_search {
+    width: 80%;
+    top: 100px;
+    left: 0%;
+    margin-left: 4%;
+    border-radius: 30px;
+  }
+  .MM_size #lnb .lnb_inner form #global_search input {
+    width: 90%;
+    height: 50px;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+  .MM_size #lnb .lnb_inner form #global_search button {
+    width: 35px;
+    height: 35px;
+    border: 1px #f00 solid;
+    background-image: url("https://www.paris.co.kr/images/common/btnGlobalSearchBS2.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .MM_size #lnb .lnb_inner .menu_Ikon {
+    display: block;
+    width: 90px;
+    height: 91px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("http://www.paris.co.kr/images/tnb/btnMenuB.gif");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .MM_size #lnb .lnb_inner .search_Ikon {
+    display: block;
+    width: 90px;
+    height: 91px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("http://www.paris.co.kr/images/common/btnGlobalSearchBS.gif");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .MM_size #lnb .lnb_inner .searchCloseBtn {
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 110px;
+    right: 2%;
+    background-image: url("https://www.paris.co.kr/images/common/btnGlobalSearchClose.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .MM_size #tnb .depth1 li.on > a {
+    background: none;
+    color: none;
+  }
+  .MM_size #tnb .depth1 li > a {
+    text-align: left;
+  }
+  .MM_size #tnb {
+    height: 0;
+  }
+  .MM_size #tnb .tnb_inner {
+    display: none;
+    position: absolute;
+    right: 0%;
+    top: 0;
+    width: 540px;
+    height: 1500px;
+    background-color: #f5f5f5;
+    z-index: 50;
+    border: 1px #fff solid;
+  }
+  .MM_size #tnb .tnb_inner .addMenu {
+    border-bottom: 1px solid #fff;
+    display: block;
+  }
+  .MM_size #tnb .tnb_inner .addMenu a {
+    display: block;
+    width: 33.2%;
+    height: 195px;
+    float: left;
+    border-right: 1px #3267a3 solid;
+    border-bottom: 2px #3267a3 solid;
+  }
+  .MM_size #tnb .tnb_inner .addMenu a span {
+    font-size: 25px;
+    color: #656464;
+    font-family: 'Malgn Gothic';
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 190px;
+  }
+  .MM_size #tnb .tnb_inner .addMenu .last {
+    border-right: 0;
+  }
+  .MM_size #tnb .tnb_inner .addMenu:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner {
+    float: none;
+    width: 100%;
+    height: 79px;
+    text-align: left;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .depth1_title {
+    display: block;
+    padding-left: 40px;
+    width: 90%;
+    margin: 0 auto;
+    height: 79px;
+    line-height: 79px;
+    border-bottom: 2px #dadada solid;
+    background-image: url("http://www.paris.co.kr/images/common/bulGnbArrowDownB.gif");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .depth1_title span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3267a3;
+    letter-spacing: 2px;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap {
+    top: 80px;
+    width: 100%;
+    border-bottom: 0;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 {
+    margin-left: 0;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li {
+    float: none;
+    padding: 0 40px 0 40px;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li a {
+    display: block;
+    height: auto;
+    padding: 15px 20px 13px 20px;
+    border-bottom: 1px #dadada solid;
+    color: #949494;
+    background-image: url("http://www.paris.co.kr/images/common/bulGnbArrowRightB.png");
+    background-repeat: no-repeat;
+    background-position: 95% 55%;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li a:hover {
+    color: #005199;
+    background-image: url("http://www.paris.co.kr/images/common/bulGnbArrowRightB.png");
+    background-repeat: no-repeat;
+    background-position: 95% 55%;
+  }
+  .MM_size #tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li a span {
+    font-family: 'Dotum';
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .MM_size #top_content .left_slide {
+    max-width: none;
+    position: relative;
+    width: 98%;
+    height: 419px;
+    float: left;
+    margin: 0 10px;
+  }
+  .MM_size #top_content .left_slide .introWrap {
+    max-width: 100%;
+    border: 1px #f00 solid;
+  }
+  .MM_size #top_content .left_slide .introWrap .intro {
+    max-width: 100%;
+  }
+  .MM_size #top_content .left_slide .introWrap .intro img {
+    width: 100%;
+    height: 100%;
+  }
+  .MM_size #top_content .left_slide .introWrap .pager {
+    margin-left: -5%;
+  }
+  .MM_size #top_content .left_slide .quickMenu {
+    max-width: none;
+    width: 100%;
+    height: 132px;
+  }
+  .MM_size #top_content .left_slide .quickMenu .quickBox {
+    height: 130px;
+  }
+  .MM_size #top_content .left_slide .quickMenu .quickBox .quickBox_Ikon {
+    display: none;
+  }
+  .MM_size #top_content .left_slide .quickMenu .quickBox .quickBox_Ikon_Mobile {
+    display: block;
+    height: 80px;
+    padding-top: 48px;
+    width: 100%;
+  }
+  .MM_size #top_content .left_slide .quickMenu .quickBox .quickBox_Ikon_Mobile li {
+    float: left;
+    width: 14.1%;
+    height: 55px;
+    text-align: center;
+    border-right: 1px solid #e5e5e5;
+  }
+  .MM_size #top_content .left_slide .quickMenu .quickBox .quickBox_Ikon_Mobile li img {
+    margin-top: -15px;
+  }
+  .MM_size #top_content .left_slide .quickMenu .quickBox .quickBox_Ikon_Mobile .last {
+    border: 0;
+  }
+  .MM_size #top_content .right_facebook {
+    margin: 0 10px;
+    margin-top: 11px;
+    max-width: none;
+    width: 98%;
+  }
+  .MM_size .middle_content {
+    margin-top: 10px;
+    max-width: 996px;
+    width: 100%;
+  }
+  .MM_size .middle_content .pb_product {
+    width: 98%;
+    max-width: none;
+    margin: 0 10px;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left {
+    width: 75%;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .Txt_right {
+    right: 8%;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .inner ul {
+    margin-left: 20%;
+    margin-top: 30px;
+    width: 200px;
+    height: 250px;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .inner ul li {
+    display: inline-block;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .inner ul li a {
+    width: 200px;
+    height: 250px;
+    display: block;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .inner ul li a img {
+    width: 100%;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .inner ul li a span {
+    font-size: 15px;
+    color: #494745;
+    font-weight: bold;
+  }
+  .MM_size .middle_content .pb_product .pb_product_inner .product_wrap_left .bntproductRight {
+    right: -10%;
+  }
+  .MM_size .middle_content .pb_Wrap {
+    margin-top: 10px;
+    margin-left: 10px;
+    max-width: none;
+    position: relative;
+    width: 48%;
+  }
+  .MM_size .middle_content .pb_Wrap .pbSpecial {
+    width: 100%;
+  }
+  .MM_size .middle_content .pb_Wrap .pbSpecial .specialWrap {
+    width: 100%;
+    max-width: 466px;
+    background-color: #fff;
+  }
+  .MM_size .middle_content .pb_Wrap .pbSpecial .specialWrap a {
+    display: block;
+    width: 100%;
+    max-width: 466px;
+  }
+  .MM_size .middle_content .pb_Wrap .EventBg {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    z-index: 1;
+    left: auto;
+  }
+  .MM_size .middle_content .pb_Wrap .pbNews {
+    width: 100%;
+  }
+  .MM_size .middle_content .pb_Wrap .pbDeliveryEshop {
+    width: 100%;
+  }
+  .MM_size .middle_content .pb_Wrap .pbDeliveryEshop .deliveryWrap {
+    width: 100%;
+  }
+  .MM_size .middle_content .pb_Wrap .pbFran {
+    width: 100%;
+  }
+  .MM_size #footer {
+    display: none;
+  }
+  .MM_size .footer_nav {
+    margin-top: 30px;
+  }
+  .MM_size .footer_address {
+    margin-top: 20px;
+  }
+  .MM_size .footer_address span {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+  }
+}
 #header {
   background-color: #fff;
 }
-#tnb {
+#gnb {
   height: 30px;
-  border: 1px solid #99bad7;
+  border-bottom: 1px solid #99bad7;
 }
-#tnb .tnb_inner {
+#gnb .gnb_inner {
   width: 996px;
   margin: 0 auto;
   position: relative;
 }
-#tnb .tnb_inner .nav ul .Ikon {
+#gnb .gnb_inner .nav ul .Ikon {
   background-image: url("http://www.paris.co.kr/images/tnb/globalLoginBg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 7px 16px;
 }
-#tnb .tnb_inner .nav ul .Ikon a {
+#gnb .gnb_inner .nav ul .Ikon a {
   display: inline-block;
   color: #fff;
   vertical-align: middle;
 }
-#tnb .tnb_inner .nav ul li {
+#gnb .gnb_inner .nav ul li {
   float: left;
   padding: 7px 0 0 7px;
 }
-#tnb .tnb_inner .nav ul li a {
+#gnb .gnb_inner .nav ul li a {
   font-size: 11px;
   color: #005199;
   vertical-align: middle;
 }
-#tnb .tnb_inner .infoBox {
+#gnb .gnb_inner .infoBox {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 6;
 }
-#tnb .tnb_inner .infoBox div {
+#gnb .gnb_inner .infoBox div {
   float: left;
 }
-#tnb .tnb_inner .infoBox div a {
+#gnb .gnb_inner .infoBox div a {
   display: block;
-  font-size: 0;
+  font-size: 0px;
   text-indent: -9999px;
   width: 69px;
   height: 45px;
   padding-bottom: 50px;
 }
-#tnb .tnb_inner .infoBox .store {
+#gnb .gnb_inner .infoBox .store {
   background-image: url("http://www.paris.co.kr/images/tnb/bgStoreB.png");
   background-repeat: no-repeat;
   background-position: 50% 5px;
 }
-#tnb .tnb_inner .infoBox .coupon {
+#gnb .gnb_inner .infoBox .coupon {
   background-image: url("http://www.paris.co.kr/images/tnb/bgCoupnB.png");
   background-repeat: no-repeat;
   background-position: 50% 5px;
 }
-#tnb .tnb_inner .infoBox .point {
+#gnb .gnb_inner .infoBox .point {
   background-image: url("http://www.paris.co.kr/images/tnb/bgPointB.png");
   background-repeat: no-repeat;
   background-position: 50% 5px;
 }
 #lnb {
   height: 69px;
+  overflow: hidden;
 }
 #lnb .lnb_inner {
-  width: 1020px;
+  max-width: 996px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -123,7 +505,7 @@ table {
 #lnb .lnb_inner form #global_search legend {
   width: 0;
   height: 0;
-  font-size: 0;
+  font-size: 0px;
   text-indent: -9999px;
 }
 #lnb .lnb_inner form #global_search input {
@@ -146,96 +528,96 @@ table {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-#gnb a {
+#tnb a {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
   font-family: '맑은고딕';
 }
-#gnb .depth1 li.on > a {
+#tnb .depth1 li.on > a {
   background: #003768;
   color: #fff;
 }
-#gnb {
+#tnb {
   background-color: #015299;
+  overflow: hidden;
   height: 40px;
   width: 100%;
 }
-#gnb .gnb_inner {
+#tnb .tnb_inner {
   width: 996px;
   margin: 0 auto;
 }
-#gnb .gnb_inner .depth1 {
+#tnb .tnb_inner .addMenu {
+  display: none;
+}
+#tnb .tnb_inner .depth1 {
   position: relative;
   max-width: 996px;
   height: 39px;
   width: 100%;
 }
-#gnb .gnb_inner .depth1 .depth1_inner {
+#tnb .tnb_inner .depth1 .depth1_inner {
   float: left;
   width: 16.6%;
   height: 39px;
   text-align: center;
 }
-#gnb .gnb_inner .depth1 .depth1_inner:hover {
-  background: #003768;
-}
-#gnb .gnb_inner .depth1 .depth1_inner .depth1_title {
+#tnb .tnb_inner .depth1 .depth1_inner .depth1_title {
   display: block;
   height: 39px;
   line-height: 39px;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .depth1_title span {
+#tnb .tnb_inner .depth1 .depth1_inner .depth1_title span {
   font-weight: bold;
   color: #fff;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .gnb_inner_wrap {
-  display: none;
+#tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap {
   position: absolute;
   top: 40px;
   left: 0;
   background-color: #f5f5f5;
   z-index: 100;
-  border-bottom: 1px solid #BBBBBB;
+  border-bottom: 1px solid #ccc;
   width: 100%;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .gnb_inner_wrap .depth2 {
+#tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 {
   margin-left: 0;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .gnb_inner_wrap .depth2 li {
+#tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li {
   float: left;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .gnb_inner_wrap .depth2 li a {
+#tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li a {
   display: block;
   height: auto;
   padding: 15px 20px 13px 20px;
   color: #949494;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .gnb_inner_wrap .depth2 li a:hover {
+#tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li a:hover {
   color: #005199;
   background-image: url("https://www.paris.co.kr/images/tnb/bulGnbActiveB.gif");
   background-repeat: no-repeat;
   background-position: 95% 55%;
 }
-#gnb .gnb_inner .depth1 .depth1_inner .gnb_inner_wrap .depth2 li a span {
+#tnb .tnb_inner .depth1 .depth1_inner .tnb_inner_wrap .depth2 li a span {
   font-family: 'Dotum';
   font-size: 12px;
 }
-.top_content {
+#top_content {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   max-width: 996px;
   background-color: #dddcdb;
 }
-.top_content .left_slide {
+#top_content .left_slide {
   max-width: 645px;
   position: relative;
   width: 65%;
   float: left;
   margin-right: 10px;
 }
-.top_content .left_slide .introWrap {
+#top_content .left_slide .introWrap {
   position: relative;
   width: 100%;
   height: 266px;
@@ -244,108 +626,117 @@ table {
   margin-right: 10px;
   margin-top: 11px;
 }
-.top_content .left_slide .introWrap .intro {
+#top_content .left_slide .introWrap .intro {
   position: relative;
   height: 264px;
   width: 100%;
   border: 1px solid #c9c9c9;
   background-color: #fff;
 }
-.top_content .left_slide .introWrap .intro div {
+#top_content .left_slide .introWrap .intro div {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #fff;
   max-width: 660px;
+  height: 100%;
 }
-.top_content .left_slide .introWrap .intro div a {
+#top_content .left_slide .introWrap .intro div a {
   display: block;
   width: 100%;
   height: 100%;
 }
-.top_content .left_slide .introWrap .intro div a img {
+#top_content .left_slide .introWrap .intro div a img {
   width: 100%;
   height: 100%;
 }
-.top_content .left_slide .introWrap .intro .btnIntroLeft {
+#top_content .left_slide .introWrap .intro .on {
+  display: block;
+}
+#top_content .left_slide .introWrap .intro .btnIntroLeft {
   position: absolute;
   top: 50%;
   margin-top: -2%;
   left: 15px;
   width: 36px;
   height: 36px;
+  font-size: 0px;
   text-indent: -9999px;
-  font-size: 0;
   background-image: url("http://www.paris.co.kr/images/main/btnIntroLeft_mod.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.top_content .left_slide .introWrap .intro .btnIntroRight {
+#top_content .left_slide .introWrap .intro .btnIntroRight {
   position: absolute;
   top: 50%;
   margin-top: -2%;
   right: 15px;
   width: 36px;
   height: 36px;
+  font-size: 0px;
   text-indent: -9999px;
-  font-size: 0;
   background-image: url("http://www.paris.co.kr/images/main/btnIntroRight_mod.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.top_content .left_slide .introWrap .pager {
+#top_content .left_slide .introWrap .pager {
   position: absolute;
   bottom: 3%;
   left: 50%;
   margin-left: -10%;
   padding: 5px;
 }
-.top_content .left_slide .introWrap .pager .active {
+#top_content .left_slide .introWrap .pager .active {
   width: 38px;
   background-image: url("http://www.paris.co.kr/images/main/btnIntroPagerActive.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.top_content .left_slide .introWrap .pager a {
+#top_content .left_slide .introWrap .pager a {
   display: block;
   float: left;
   margin: 0 2px;
   width: 12px;
   height: 13px;
-  font-size: 0;
+  font-size: 0px;
+  text-indent: -9999px;
   background-image: url("http://www.paris.co.kr/images/main/btnIntroPager.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.top_content .left_slide .quickMenu {
+#top_content .left_slide .quickMenu {
   position: relative;
   width: 100%;
-  width: 645px;
+  max-width: 645px;
   height: 102px;
   background-color: #fff;
   top: 10px;
   margin-bottom: 10px;
 }
-.top_content .left_slide .quickMenu .quickBox {
+#top_content .left_slide .quickMenu .quickBox {
   width: 100%;
   height: 100px;
   border: 1px solid #c9c9c9;
 }
-.top_content .left_slide .quickMenu .quickBox .quickBox_Ikon {
+#top_content .left_slide .quickMenu .quickBox .quickBox_Ikon {
   height: 53px;
   padding-top: 40px;
   width: 100%;
 }
-.top_content .left_slide .quickMenu .quickBox .quickBox_Ikon ul li {
+#top_content .left_slide .quickMenu .quickBox .quickBox_Ikon ul li {
   float: left;
   padding: 0 2.3%;
   border-right: 1px solid #e5e5e5;
 }
-.top_content .left_slide .quickMenu .quickBox .quickBox_Ikon ul .last {
+#top_content .left_slide .quickMenu .quickBox .quickBox_Ikon ul .last {
   border: 0;
   padding: 0 2.8%;
 }
-.top_content .right_facebook {
+#top_content .left_slide .quickMenu .quickBox .quickBox_Ikon_Mobile {
+  display: none;
+}
+#top_content .right_facebook {
   position: relative;
   max-width: 339px;
   width: 35%;
@@ -353,19 +744,12 @@ table {
   float: left;
   margin-top: 11px;
   background-color: #fff;
-}
-.menu_title {
-  position: absolute;
-  left: 13px;
-  top: 13px;
-  display: inline-block;
-  z-index: 3;
+  border: 1px solid #c9c9c9;
 }
 .middle_content {
   position: relative;
-  padding: 0;
   margin: 0 auto;
-  width: 996px;
+  max-width: 996px;
   margin-top: 10px;
 }
 .middle_content .pb_product {
@@ -374,6 +758,7 @@ table {
   height: 300px;
   float: left;
   background-color: #fff;
+  border: 1px solid #c9c9c9;
 }
 .middle_content .pb_product .product_wrap_left {
   width: 75%;
@@ -382,30 +767,39 @@ table {
 }
 .middle_content .pb_product .product_wrap_left .Txt_right {
   right: 20px;
+  width: 100px;
 }
 .middle_content .pb_product .product_wrap_left .inner {
   display: inline-block;
   width: 100%;
   height: 300px;
-}
-.middle_content .pb_product .product_wrap_left .inner ul {
-  margin: 0 30px;
-  width: 55%;
-  height: 250px;
-  border: 1px #f00 solid;
-  text-align: center;
+  position: relative;
   overflow: hidden;
+}
+.middle_content .pb_product .product_wrap_left .inner ul .on div {
+  display: block;
 }
 .middle_content .pb_product .product_wrap_left .inner ul li {
   display: inline-block;
 }
-.middle_content .pb_product .product_wrap_left .inner ul li a {
-  display: block;
+.middle_content .pb_product .product_wrap_left .inner ul li div {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  width: 55%;
+  height: 250px;
+  display: none;
 }
-.middle_content .pb_product .product_wrap_left .inner ul li a img {
+.middle_content .pb_product .product_wrap_left .inner ul li div a {
+  display: inline-block;
+  border: 1px #f00 solid;
+}
+.middle_content .pb_product .product_wrap_left .inner ul li div a img {
   width: 100%;
 }
-.middle_content .pb_product .product_wrap_left .inner ul li a span {
+.middle_content .pb_product .product_wrap_left .inner ul li div a span {
+  display: block;
+  text-align: center;
   font-size: 15px;
   color: #494745;
   font-weight: bold;
@@ -415,6 +809,7 @@ table {
   position: absolute;
   top: 45%;
   left: 5%;
+  z-index: 11;
 }
 .middle_content .pb_product .product_wrap_left .bntproductRight {
   display: inline-block;
@@ -480,20 +875,23 @@ table {
 }
 .middle_content .pb_Wrap .pbNews .newsWrap ol li {
   padding: 3px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .middle_content .pb_Wrap .pbNews .newsWrap ol li a {
   font-size: 11px;
   color: #64625f;
 }
 .middle_content .pb_Wrap .pbNews .more {
-  font-size: 0;
-  text-indent: -9999px;
   position: absolute;
   top: 8px;
   right: 9px;
   display: block;
   width: 18px;
   height: 18px;
+  font-size: 0px;
+  text-indent: -9999px;
   background-image: url("https://www.paris.co.kr/images/main/btnMore.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -549,8 +947,8 @@ table {
   height: 14px;
   border-radius: 18px;
   margin: 0 2px;
+  font-size: 0px;
   text-indent: -9999px;
-  font-size: 0;
   background-color: #a9a8a6;
 }
 .middle_content .pb_Wrap .pbFran .guidePager .active {
@@ -681,7 +1079,7 @@ table {
   display: block;
   width: 150px;
   height: 60px;
-  font-size: 0;
+  font-size: 0px;
   text-indent: -9999px;
 }
 #footer .layer {
@@ -693,8 +1091,8 @@ table {
   display: block;
   height: 60px;
   border-top: 1px solid #535252;
+  font-size: 0px;
   text-indent: -9999px;
-  font-size: 0;
   background-image: url("https://www.paris.co.kr/images/common/btnSiteLinkClose.gif");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -745,9 +1143,9 @@ table {
   display: block;
 }
 #contents {
-  width: 996px;
+  max-width: 996px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px 0 30px 0;
   background-color: #fff;
 }
 #contents .line_map {
@@ -1255,4 +1653,121 @@ table {
   padding: 16px 20px;
   font-size: 14px;
   letter-spacing: -1px;
+}
+#brandstory .ADGallery_wrap {
+  width: 930px;
+  margin: 0 auto;
+}
+#brandstory .ADGallery_wrap .videoZone {
+  width: 780px;
+  height: 524px;
+  margin: 0 auto;
+  border: 1px #f00 solid;
+}
+#brandstory .ADGallery_wrap .videoZone iframe {
+  width: 100%;
+  height: 100%;
+}
+#brandstory .ADGallery_wrap p {
+  width: 740px;
+  height: 80px;
+  border: 1px solid #e1e1e1;
+  padding: 10px 20px;
+  margin: 16px auto;
+  line-height: 17px;
+  font-size: 13px;
+  overflow-y: scroll;
+  background-color: #F3F3F3;
+  color: #6f6a65;
+}
+#brandstory .ADGallery_wrap .videoList {
+  width: 100%;
+  border-bottom: 1px solid #015299;
+  border-top: 1px solid #015299;
+  margin-bottom: 30px;
+}
+#brandstory .ADGallery_wrap .videoList h3 {
+  line-height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid #015299;
+  border-top: 1px solid #015299;
+  color: #6f6a65;
+}
+#brandstory .ADGallery_wrap .videoList .video {
+  width: 930px;
+}
+#brandstory .ADGallery_wrap .videoList .video ul {
+  padding: 20px 0 10px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+#brandstory .ADGallery_wrap .videoList .video ul li {
+  width: 222px;
+  float: left;
+  margin: 0 5px;
+  position: relative;
+}
+#brandstory .ADGallery_wrap .videoList .video ul li img {
+  width: 100%;
+}
+#brandstory .ADGallery_wrap .videoList .video ul li span {
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #64625f;
+}
+#brandstory .ADGallery_wrap .videoList .video ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#center .change.on {
+  display: block;
+}
+#center .change {
+  display: none;
+}
+#center .change .center_list {
+  max-width: 930px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 134px;
+}
+#center .change table {
+  width: 100%;
+}
+#center .change table thead th {
+  padding: 11px 0;
+  border-top: 2px solid #015299;
+  border-bottom: 1px solid #015299;
+  color: #6c6c6c;
+  font-size: 13px;
+}
+#center .change .list_inner {
+  width: 100%;
+}
+#center .change .list_inner .question {
+  line-height: 38px;
+  border-bottom: 1px dashed #cccccc;
+  padding-left: 16px;
+}
+#center .change .list_inner .question a {
+  color: #6c6c6c;
+  display: block;
+  padding-left: 36px;
+  background-image: url("https://www.paris.co.kr/images/customer/QuestionOff.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#center .change .list_inner .question a span {
+  display: block;
+  background-image: url("https://www.paris.co.kr/images/customer/btnArrowOn.gif");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+#center .change .list_inner .answer {
+  line-height: 22px;
+  padding: 20px;
+  background-color: #e3e3e3;
 }

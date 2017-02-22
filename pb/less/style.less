@@ -1,36 +1,13 @@
-* {margin: 0; padding: 0;}
-
-ul,ol { list-style: none;}
-
-a {text-decoration: none;}
-
-body {
-    background-color: @bg_color; 
-    font-family: '맑은고딕', 'Malgn Gothic', '돋움', Dotum, sans-serif;
-    font-size:11px;
-}
-
-img {border:0;}
-
-
-caption {display: none;}
-
-table {border-spacing:0;}
-
-.Txt_right {position: absolute; top:0; right: 0px; z-index: 10;}
-
-// ---------------------------------------------------------------------
-
 
     #header {background-color: #fff;}
     
     // ---------------------------tnb시작--------------------------------------
     
-    #tnb {
+    #gnb {
         height: 30px;
-        border:1px solid #99bad7;
+        border-bottom:1px solid #99bad7;
         
-        .tnb_inner {
+        .gnb_inner {
             width: 996px;
             margin: 0 auto;
             position: relative;
@@ -55,7 +32,7 @@ table {border-spacing:0;}
                         
                         a {
                             font-size: 11px;
-                            color: #005199;
+                            color: @gnb_color;
                             vertical-align: middle;
                         }
                     }
@@ -74,8 +51,7 @@ table {border-spacing:0;}
                     
                     a {
                         display: block;
-                        font-size: 0;
-                        text-indent: -9999px;
+                        .font();
                         width: 69px;
                         height: 45px;
                         padding-bottom: 50px;
@@ -101,9 +77,11 @@ table {border-spacing:0;}
     
     #lnb {
         height: 69px;
+        overflow: hidden;
         
         .lnb_inner {
-            width: 1020px;
+            max-width: 996px;
+            width: 100%;
             margin: 0 auto;
             position: relative;
             
@@ -126,7 +104,7 @@ table {border-spacing:0;}
                     position: absolute;
                     top:20px;
                     left:50%;
-                    background-color: #f5f5f5;
+                    background-color: @search_bg_color;
                     margin-left: -49.1%;
                     border-radius:12px;
                     padding: 0 10px;
@@ -134,8 +112,7 @@ table {border-spacing:0;}
                     legend {
                         width: 0;
                         height: 0;
-                        font-size: 0;
-                        text-indent: -9999px;
+                        .font();
                     }
                     
                     input {
@@ -151,6 +128,7 @@ table {border-spacing:0;}
                     button {
                         border:0;
                         text-indent: -9999px;
+                        // 폰트사이즈 0 시키지 말고 유지해야지 그림이 보임 
                         overflow:hidden;
                         width: 20px;
                         padding: 5px;
@@ -163,24 +141,29 @@ table {border-spacing:0;}
     }
     // ---------------------------gnb시작--------------------------------------
     
-    #gnb a {
+    #tnb a {
         text-transform:uppercase;
+        // 소문자를 대문자로 만드는 태그
         text-align: center;
         font-size: 14px;
         font-family: '맑은고딕';
     }
     
-    #gnb .depth1 li.on>a {background:#003768; color: #fff;}
+    #tnb .depth1 li.on>a {background:@hover_bg_color; color: #fff;}
     
-    #gnb {
-        background-color: #015299;
-        // overflow: hidden;
+    #tnb {
+        background-color: @main_color;
+        overflow: hidden;
         height: 40px;
         width: 100%;
         
-        .gnb_inner {
+        .tnb_inner {
             width: 996px;
             margin: 0 auto;
+            
+            .addMenu {
+                display: none;
+            }
             
             .depth1 {
                 position: relative;
@@ -195,10 +178,6 @@ table {border-spacing:0;}
                     height: 39px;
                     text-align: center;
                     
-                    &:hover {
-                        background:#003768;
-                    }
-                    
                     .depth1_title {
                         display: block;
                         height: 39px;
@@ -210,15 +189,15 @@ table {border-spacing:0;}
                         }
                     }
                     
-                    .gnb_inner_wrap {
-                        display: none;
+                    .tnb_inner_wrap {
+                        // display: none;
                         // 디스플레이 none 자바스크립트 때 block
                         position: absolute;
                         top:40px;
                         left: 0;
-                        background-color: #f5f5f5;
+                        background-color:@inner_bg_color;
                         z-index: 100;
-                        border-bottom: 1px solid #BBBBBB;
+                        border-bottom: 1px solid #ccc;
                         width: 100%;
                         
                         .depth2 {
@@ -253,7 +232,7 @@ table {border-spacing:0;}
     
     //---------------------- header END---------------------------------------
     
-    .top_content {
+    #top_content {
         overflow: hidden;
         position: relative;
         margin: 0 auto;
@@ -280,16 +259,18 @@ table {border-spacing:0;}
                     position: relative;
                     height: 264px;
                     width: 100%;
-                    border: 1px solid #c9c9c9;
+                    border: 1px solid @border_color;
                     background-color: #fff;
                     
                     div {
                         // display: inline-block;
+                        display: none;
                         position: absolute;
                         top:0;
                         left: 0;
                         background-color: #fff;
                         max-width: 660px;
+                        height: 100%;
                         
                         a {
                             display: block;
@@ -303,6 +284,11 @@ table {border-spacing:0;}
                         }
                     }
                     
+                    .on {
+                        display: block;
+                        
+                    }
+                    
                     .btnIntroLeft {
                         position: absolute;
                         top: 50%;
@@ -310,8 +296,7 @@ table {border-spacing:0;}
                         left:15px;
                         width: 36px;
                         height: 36px;
-                        text-indent: -9999px;
-                        font-size: 0;
+                        .font();
                         .background(url("http://www.paris.co.kr/images/main/btnIntroLeft_mod.png"),no-repeat,50% 50%);
                     }
                     
@@ -322,8 +307,7 @@ table {border-spacing:0;}
                         right:15px;
                         width: 36px;
                         height: 36px;
-                        text-indent: -9999px;
-                        font-size: 0;
+                        .font();
                         .background(url("http://www.paris.co.kr/images/main/btnIntroRight_mod.png"),no-repeat,50% 50%);
                     }
                 }
@@ -346,7 +330,7 @@ table {border-spacing:0;}
                         margin: 0 2px;
                         width: 12px;
                         height: 13px;
-                        font-size: 0;
+                        .font();
                         .background(url("http://www.paris.co.kr/images/main/btnIntroPager.png"),no-repeat,50% 50%);
                     }
                 }
@@ -355,7 +339,7 @@ table {border-spacing:0;}
             .quickMenu {
                 position: relative;
                 width: 100%;
-                width: 645px;
+                max-width: 645px;
                 height: 102px;
                 background-color: #fff;
                 top:10px;
@@ -364,7 +348,7 @@ table {border-spacing:0;}
                 .quickBox {
                     width: 100%;
                     height: 100px;
-                    border:1px solid #c9c9c9;
+                    border:1px solid @border_color;
                     
                     .quickBox_Ikon {
                         height: 53px;
@@ -382,6 +366,10 @@ table {border-spacing:0;}
                             .last {border:0; padding: 0 2.8%;}
                         }
                     }
+                    
+                    .quickBox_Ikon_Mobile {
+                        display: none;
+                    }
                 }
             }
         }
@@ -395,24 +383,16 @@ table {border-spacing:0;}
             float: left;
             margin-top: 11px;
             background-color: #fff;
+            border:1px solid @border_color;
         }
     }
     
-    // 모두 정의 메뉴 타이틀
-        .menu_title {
-            position: absolute;
-            left: 13px;
-            top:13px;
-            display: inline-block;
-            z-index: 3;
-        }
     // -----------------------------top content END-----------------------------
     
     .middle_content {
         position: relative;
-        padding: 0;
         margin:0 auto;
-        width: 996px;
+        max-width: 996px;
         margin-top: 10px;
         
         // 슬라이드 
@@ -422,6 +402,7 @@ table {border-spacing:0;}
             height: 300px;
             float: left;
             background-color: #fff;
+            border:1px solid @border_color;
             
             .product_wrap_left {
                 width: 75%;
@@ -430,35 +411,52 @@ table {border-spacing:0;}
                 
                 .Txt_right {
                     right: 20px;
+                    width: 100px;
                 }
                 
                 .inner {
                     display: inline-block;
                     width: 100%;
                     height: 300px;
+                    position: relative;
+                    overflow: hidden;
                     
                     ul {
-                        margin: 0 30px;
-                        width: 55%;
-                        height: 250px;
-                        border:1px #f00 solid;
-                        text-align: center;
-                        overflow: hidden;
+                        
+                        .on {
+                            
+                            div {
+                                display: block;
+                            }
+                        }
+                        
                         
                         li {
-                            display: inline-block;
+                            display:inline-block;
                             
-                            a {
-                                display:block;
+                            div {
+                                position: absolute;
+                                left: 50px;
+                                top:30px;
+                                width: 55%;
+                                height: 250px;
+                                display: none;
                                 
-                                 img {
-                                     width: 100%;
-                                 }
-                                
-                                span {
-                                    font-size: 15px;
-                                    color:#494745;
-                                    font-weight: bold;
+                                a {
+                                    display: inline-block;
+                                    border:1px #f00 solid;
+                                    
+                                     img {
+                                         width: 100%;
+                                     }
+                                    
+                                    span {
+                                        display:block;
+                                        text-align: center;
+                                        font-size: 15px;
+                                        color:#494745;
+                                        font-weight: bold;
+                                    }
                                 }
                             }
                         }
@@ -470,6 +468,7 @@ table {border-spacing:0;}
                     position: absolute;
                     top:45%;
                     left: 5%;
+                    z-index: 11;
                 }
                 
                 .bntproductRight {
@@ -508,7 +507,7 @@ table {border-spacing:0;}
             .pbSpecial {
                 width: 233px;
                 height: 140px;
-                border:1px solid #c9c9c9;
+                border:1px solid @border_color;
                 position: relative;
                 
                 .specialWrap {
@@ -535,7 +534,7 @@ table {border-spacing:0;}
             .pbNews {
                 width: 233px;
                 height: 146px;
-                border:1px solid #c9c9c9;
+                border:1px solid @border_color;
                 position: relative;
                 margin-top: 10px;
                 background-color: #fff;
@@ -546,26 +545,28 @@ table {border-spacing:0;}
                          padding: 22px 0 0 12px;
                          margin-top: 16px;
                          
-                         li {
-                             padding: 3px 0;
+                        li {
+                            padding: 3px 0;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space:nowrap;
                              
                              a { 
                                  font-size: 11px;
                                  color: #64625f;
                              }
-                         }
+                        }
                      }
                 }
                 
                 .more {
-                    font-size: 0;
-                    text-indent: -9999px;
                     position: absolute;
                     top:8px;
                     right:9px;
                     display: block;
                     width: 18px;
                     height: 18px;
+                    .font();
                     .background(url("https://www.paris.co.kr/images/main/btnMore.png"),no-repeat,50% 50%);
                 }
             }
@@ -573,7 +574,7 @@ table {border-spacing:0;}
             .pbDeliveryEshop {
                 width: 233px;
                 height: 140px;
-                border:1px solid #c9c9c9;
+                border:1px solid @border_color;
                 position: relative;
                 background-color: #fff;
                 overflow: hidden;
@@ -595,7 +596,7 @@ table {border-spacing:0;}
             .pbFran {
                 width: 233px;
                 height: 146px;
-                border:1px solid #c9c9c9;
+                border:1px solid @border_color;
                 position: relative;
                 margin-top: 10px;
                 background-color: #fff;
@@ -628,8 +629,7 @@ table {border-spacing:0;}
                         height: 14px;
                         border-radius: 18px;
                         margin: 0 2px;
-                        text-indent: -9999px;
-                        font-size: 0;
+                        .font();
                         background-color: #a9a8a6;
                     }
                     
@@ -662,7 +662,7 @@ table {border-spacing:0;}
         .brandSite {
             float: left;
             position: relative;
-            border-right:3px solid #dddcdb;
+            border-right:3px solid @bg_color;
             
             .trigger {
                 .background(url("https://www.paris.co.kr/images/common/btnBrandSite.gif"),no-repeat,50% 50%);
@@ -711,7 +711,7 @@ table {border-spacing:0;}
         
         .recruitInfo {
             float: right;
-            border-left:  3px solid #dddcdb;
+            border-left:  3px solid @bg_color;
             
             .trigger {
                 .background(url("https://www.paris.co.kr/images/common/btnRecruitInfo.gif"),no-repeat,50% 50%);
@@ -786,8 +786,7 @@ table {border-spacing:0;}
                 display: block;
                 width: 150px;
                 height: 60px;
-                font-size: 0;
-                text-indent: -9999px;
+                .font();
             }
                 
         .layer {
@@ -801,8 +800,7 @@ table {border-spacing:0;}
             display: block;
             height: 60px;
             border-top:1px solid #535252;
-            text-indent: -9999px;
-            font-size: 0;
+            .font();
             .background(url("https://www.paris.co.kr/images/common/btnSiteLinkClose.gif"),no-repeat,50% 50%);
         }
     }
