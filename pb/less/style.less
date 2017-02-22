@@ -170,7 +170,6 @@
                 max-width: 996px;
                 height: 39px;
                 width: 100%;
-                // max 996px 이거 뭐지? 
                 
                 .depth1_inner {
                     float: left;
@@ -238,6 +237,7 @@
         margin: 0 auto;
         max-width: 996px;
         background-color: #dddcdb;
+        border:1px #f00 solid;
         
         .left_slide {
             max-width: 645px;
@@ -245,6 +245,7 @@
             width: 65%;
             float: left;
             margin-right: 10px;
+            border:1px #f00 solid;
             
             .introWrap {
                 position: relative;
@@ -262,31 +263,33 @@
                     border: 1px solid @border_color;
                     background-color: #fff;
                     
-                    div {
-                        // display: inline-block;
-                        display: none;
-                        position: absolute;
-                        top:0;
-                        left: 0;
-                        background-color: #fff;
-                        max-width: 660px;
-                        height: 100%;
+                    ul {
                         
-                        a {
-                            display: block;
-                            width: 100%;
-                            height: 100%;
+                        .on {
                             
-                            img { 
-                                width: 100%;
-                                height: 100%;
+                            div {
+                                display: block;
                             }
                         }
-                    }
-                    
-                    .on {
-                        display: block;
                         
+                        li {
+                            display: inline-block;
+                            
+                            div {
+                                display: none;
+                                position: absolute;
+                                top:0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                
+                                a {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
                     }
                     
                     .btnIntroLeft {
@@ -448,6 +451,7 @@
                                     
                                      img {
                                          width: 100%;
+                                         border:1px #f00 solid;
                                      }
                                     
                                     span {

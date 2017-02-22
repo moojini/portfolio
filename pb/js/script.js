@@ -9,21 +9,17 @@
         
         var move=$('.inner').width();
         
+        var width =$('.intro').width();
+        
         var idx=0;
         
-        $('#top_content .intro .btnIntroRight').click(function(){
+        $("#top_cotent .left_slide .intro").click(function(){
             
-            $('.intro div').eq(idx).animate({
-                left:"-647px"
-            },1000).next().css({
-                'display':'block',
-                left:"645px"
-            }).stop().animate({
-                'left':'0px'
-            },1000);
-            
-            idx ++;
-        })
+            $(".intro ul li").eq(idx).find("div").animate({
+                left:-width
+            });
+        });
+        
         
         $(".middle_content .product_wrap_left .bntproductRight").click(function(){
             

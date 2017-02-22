@@ -609,6 +609,7 @@ table {
   margin: 0 auto;
   max-width: 996px;
   background-color: #dddcdb;
+  border: 1px #f00 solid;
 }
 #top_content .left_slide {
   max-width: 645px;
@@ -616,6 +617,7 @@ table {
   width: 65%;
   float: left;
   margin-right: 10px;
+  border: 1px #f00 solid;
 }
 #top_content .left_slide .introWrap {
   position: relative;
@@ -633,26 +635,24 @@ table {
   border: 1px solid #c9c9c9;
   background-color: #fff;
 }
-#top_content .left_slide .introWrap .intro div {
+#top_content .left_slide .introWrap .intro ul .on div {
+  display: block;
+}
+#top_content .left_slide .introWrap .intro ul li {
+  display: inline-block;
+}
+#top_content .left_slide .introWrap .intro ul li div {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff;
-  max-width: 660px;
-  height: 100%;
-}
-#top_content .left_slide .introWrap .intro div a {
-  display: block;
   width: 100%;
   height: 100%;
 }
-#top_content .left_slide .introWrap .intro div a img {
+#top_content .left_slide .introWrap .intro ul li div a {
+  display: block;
   width: 100%;
   height: 100%;
-}
-#top_content .left_slide .introWrap .intro .on {
-  display: block;
 }
 #top_content .left_slide .introWrap .intro .btnIntroLeft {
   position: absolute;
@@ -796,6 +796,7 @@ table {
 }
 .middle_content .pb_product .product_wrap_left .inner ul li div a img {
   width: 100%;
+  border: 1px #f00 solid;
 }
 .middle_content .pb_product .product_wrap_left .inner ul li div a span {
   display: block;
